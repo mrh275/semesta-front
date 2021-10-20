@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.hb-menu {
+    width: 35px;
+    height: 4px;
+    margin: 6px 0;
+    transition: 0.3s;
+}
+
+.change-1 {
+    -webkit-transform: rotate(-45deg) translate(-7px, 4px);
+    transform: rotate(-45deg) translate(-7px, 4px);
+}
+
+.change-2 {
+    opacity: 0;
+}
+
+.change-3 {
+    -webkit-transform: rotate(45deg) translate(-9px, -8px);
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.menuMobile {
+    transition: .5s;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn {
+        @apply inline-block px-3 py-2 rounded-md focus:outline-none focus:ring focus:ring-offset-2 transition tracking-wider font-semibold text-sm sm:text-base;
+    }
+
+    .btn-primary {
+        @apply bg-primary hover:bg-primary-light focus:ring-primary focus:ring-opacity-50 active:bg-primary-dark text-white;
+    }
+
+    .btn-secondary {
+        @apply bg-gray-600 hover:bg-gray-500 focus:ring-gray-600 focus:ring-opacity-50 active:bg-gray-700 text-white
+    }
+
+    .btn-success {
+        @apply bg-green-600 hover:bg-green-500 focus:ring-green-600 focus:ring-opacity-50 active:bg-green-700 text-white
+    }
+
+    .btn-warning {
+        @apply bg-yellow-400 hover:bg-yellow-300 focus:ring-yellow-400 focus:ring-opacity-50 active:bg-yellow-500 text-gray-700
+    }
+
+    .btn-danger {
+        @apply bg-red-600 hover:bg-red-500 focus:ring-red-600 focus:ring-opacity-50 active:bg-red-700 text-white
+    }
+
+    .navbar {
+        @apply bg-gray-800 w-full sm:max-w-full mx-auto px-4 py-2 flex justify-between;
+    }
+
+    .search-input {
+        @apply text-sm w-0 rounded-lg focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-offset-2 focus:ring-gray-600 tracking-wider transform transition mr-3;
+    }
+
+    .search-btn {
+        @apply bg-gray-800 hover:bg-gray-600 pt-2 px-2 rounded-md transition;
+    }
+
+    .navbarMenu {
+        @apply md:hidden sm:max-w-full absolute h-auto top-0 w-4/5 bg-gray-800;
+    }
+
+    .navMenu {
+        @apply bg-gray-800 cursor-pointer transition z-10;
+    }
+
+    .nav-link {
+        @apply block hover:bg-gray-600 pl-6 py-3 w-full;
+    }
+
+    .collapse {
+        @apply h-0 opacity-0;
+    }
+
+    .expand {
+        @apply h-full opacity-100;
+    }
+}
