@@ -34,10 +34,33 @@ $(document).ready(function() {
 
 
     // Dropdown toggle
-      $('.dropdown').on('click', function() {
-          $('.dropdown-menu').toggleClass('expand', 300);
-          $('.dropdown-menu').toggleClass('collapse', 300);
-          $('.dropdown-menu').toggleClass('invisible', 500);
+      $('ul.menu-nav').on('click', '.dropdown', function() {
+          $(this).find('.dropdown-menu').toggleClass('expand', 300);
+          $(this).find('.dropdown-menu').toggleClass('collapse', 300);
+          $(this).find('.dropdown-menu').toggleClass('invisible', 500);
       })
+
+      // Dropdown hover level 1
+        $('.menu-nav-lg .dropdown').mouseenter(function() {
+          $(this).find('.dropdown-lg').toggleClass('invisible', 500);
+          $(this).find('.dropdown-lg').toggleClass('expanded', 200);
+          $(this).find('.dropdown-lg').toggleClass('collapse', 200);
+        }).mouseleave(function () { 
+          $(this).find('.dropdown-lg').toggleClass('expanded', 300);
+          $(this).find('.dropdown-lg').toggleClass('collapse', 300);
+          $(this).find('.dropdown-lg').toggleClass('invisible', 500);
+        });
+
+      // Dropdown hover level 2
+        $('.dropdown-link-lg').mouseenter(function() {
+          $(this).find('.drop-1-lg').toggleClass('invisible', 500);
+          $(this).find('.drop-1-lg').toggleClass('expanded', 200);
+          $(this).find('.drop-1-lg').toggleClass('collapse', 200);
+        }).mouseleave(function () { 
+          $(this).find('.drop-1-lg').toggleClass('expanded', 300);
+          $(this).find('.drop-1-lg').toggleClass('collapse', 300);
+          $(this).find('.drop-1-lg').toggleClass('invisible', 500);
+        });
+      
     
   })
