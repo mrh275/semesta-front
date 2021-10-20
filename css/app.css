@@ -55,7 +55,27 @@
     }
 
     .navbar {
-        @apply bg-gray-800 w-full sm:max-w-full mx-auto px-4 py-2 flex justify-between;
+        @apply bg-gray-800 w-full sm:max-w-full px-4 py-2 lg:py-0 flex justify-between lg:justify-around;
+    }
+
+    .brand {
+        @apply lg:ml-5;
+    }
+
+    .menuList {
+        @apply hidden lg:block;
+    }
+
+    .menuList .menu-nav-lg {
+        @apply mx-auto hidden lg:inline-flex;
+    }
+
+    .menuList .nav-menu-lg {
+
+    }
+
+    .hbButton {
+        @apply lg:hidden;
     }
 
     .search-input {
@@ -67,7 +87,7 @@
     }
 
     .navbarMenu {
-        @apply md:hidden sm:max-w-full absolute h-auto top-0 w-4/5 bg-gray-800;
+        @apply lg:hidden sm:max-w-full absolute h-auto top-0 w-4/5 bg-gray-800;
     }
 
     .navMenu {
@@ -75,7 +95,11 @@
     }
 
     .nav-link {
-        @apply block hover:bg-gray-600 pl-6 py-3 w-full;
+        @apply block hover:bg-gray-600 pl-6 py-3 w-full lg:px-4 lg:py-3;
+    }
+
+    .dropdown-link {
+        @apply block hover:bg-gray-600 pl-9 py-3 w-full
     }
 
     .collapse {
@@ -84,5 +108,9 @@
 
     .expand {
         @apply h-full opacity-100;
+    }
+
+    .expanded {
+        @apply h-auto opacity-100;
     }
 }
