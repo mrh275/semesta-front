@@ -18,7 +18,47 @@
   </head>
   <body class="bg-gray-300">
     <nav class="navbar">
-      <img src="./img/logo.png" alt="Logo SMA Negeri 1 Rawamerta" class="w-8 my-auto">
+      <div class="branding lg:inline-flex hidden">
+        <img src="./img/logo.png" alt="Logo SMA Negeri 1 Rawamerta" class="w-8 my-auto">
+        <h2 class="brand my-auto text-white font-medium">SMAN 1 Rawamerta</h2>
+      </div>
+
+        <img src="./img/logo.png" alt="Logo SMA Negeri 1 Rawamerta" class="w-8 my-auto lg:hidden">
+        <h2 class="brand my-auto text-white font-medium lg:hidden">SMAN 1 Rawamerta</h2>
+
+      <div class="menuList">
+        <ul class="text-white menu-nav-lg">
+          <li class="nav-menu-lg"><a href="#" class="nav-link">Beranda</a></li>
+          <li class="dropdown nav-menu-lg z-10"><a href="#" class="nav-link">Profile</a>
+            <ul class="dropdown-lg absolute bg-gray-800 invisible collapse">
+              <li class="dropdown-link-lg"><a href="#" class="px-3 py-2 hover:bg-gray-600 block">Sejarah</a></li>
+              <li class="dropdown-link-lg"><a href="#" class="px-3 py-2 hover:bg-gray-600 block">Visi dan Misi</a>
+                <ul class="drop-1-lg absolute left-full bg-gray-800 top-10 invisible collapse">
+                  <li><a href="#" class="drop-link-lg-1 pl-3 pr-16 py-2 hover:bg-gray-600 block">Guru</a></li>
+                  <li><a href="#" class="drop-link-lg-1 pl-3 pr-16 py-2 hover:bg-gray-600 block">TU</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-link-lg"><a href="#" class="px-3 py-2 hover:bg-gray-600 block">Struktur Organisasi</a></li>
+            </ul>
+          </li>
+          <li class="nav-menu-lg z-40"><a href="#" class="nav-link">Berita</a></li>
+          <li class="nav-menu-lg dropdown"><a href="#" class="nav-link">Ekstrakurikuler</a>
+            <ul class="dropdown-lg absolute bg-gray-800 invisible collapse">
+              <li><a href="#" class="dropdown-link-lg pl-3 pr-16 py-2 hover:bg-gray-600 block">OSIS</a></li>
+              <li><a href="#" class="dropdown-link-lg pl-3 pr-16 py-2 hover:bg-gray-600 block">MPK</a></li>
+              <li><a href="#" class="dropdown-link-lg pl-3 pr-16 py-2 hover:bg-gray-600 block">Paskibra</a></li>
+              <li><a href="#" class="dropdown-link-lg pl-3 pr-16 py-2 hover:bg-gray-600 block">PMR</a></li>
+              <li><a href="#" class="dropdown-link-lg pl-3 pr-16 py-2 hover:bg-gray-600 block">Pramuka</a></li>
+              <li><a href="#" class="dropdown-link-lg pl-3 pr-16 py-2 hover:bg-gray-600 block">Rohis</a></li>
+              <li><a href="#" class="dropdown-link-lg pl-3 pr-16 py-2 hover:bg-gray-600 block">Kesenian</a></li>
+              <li><a href="#" class="dropdown-link-lg pl-3 pr-16 py-2 hover:bg-gray-600 block">Olahraga</a></li>
+            </ul>
+          </li>
+          <li class="nav-menu-lg"><a href="#" class="nav-link">Galeri</a></li>
+          <li class="nav-menu-lg"><a href="#" class="nav-link">Kontak Kami</a></li>
+        </ul>
+      </div>
+
       <button class="cursor-pointer hbButton" data-target="navMenuMobile">
         <div class="hb-menu bg-gray-400"></div>
         <div class="hb-menu bg-gray-400"></div>
@@ -36,26 +76,32 @@
         <button class="search-btn"><ion-icon name="search" class="text-white text-xl"></ion-icon></button>
       </div>
       <div class="menuListMobile my-5">
-        <ul class="text-white">
+        <ul class="text-white menu-nav">
           <li class="navMenu"><a href="#" class="nav-link">Beranda</a></li>
           <li class="dropdown navMenu z-10"><a href="#" class="nav-link">Profile</a>
           <ul class="dropdown-menu collapse invisible">
-            <li><a href="#" class="block hover:bg-gray-600 pl-9 py-3 w-full">Sejarah</a></li>
-            <li><a href="#" class="block hover:bg-gray-600 pl-9 py-3 w-full">Visi dan Misi</a></li>
-            <li><a href="#" class="block hover:bg-gray-600 pl-9 py-3 w-full">Struktur Organisasi</a></li>
+            <li><a href="#" class="dropdown-link">Sejarah</a></li>
+            <li><a href="#" class="dropdown-link">Visi dan Misi</a></li>
+            <li><a href="#" class="dropdown-link">Struktur Organisasi</a></li>
           </ul>
           </li>
           <li class="navMenu z-40"><a href="#" class="nav-link">Berita</a></li>
-          <li class="navMenu dropdown"><a href="#" class="nav-link">Ekstrakurikuler</a></li>
+          <li class="navMenu dropdown"><a href="#" class="nav-link">Ekstrakurikuler</a>
+            <ul class="dropdown-menu collapse invisible">
+              <li><a href="#" class="dropdown-link">OSIS</a></li>
+              <li><a href="#" class="dropdown-link">MPK</a></li>
+              <li><a href="#" class="dropdown-link">Paskibra</a></li>
+              <li><a href="#" class="dropdown-link">PMR</a></li>
+              <li><a href="#" class="dropdown-link">Pramuka</a></li>
+              <li><a href="#" class="dropdown-link">Rohis</a></li>
+              <li><a href="#" class="dropdown-link">Kesenian</a></li>
+              <li><a href="#" class="dropdown-link">Olahraga</a></li>
+            </ul>
+          </li>
           <li class="navMenu"><a href="#" class="nav-link">Galeri</a></li>
           <li class="navMenu"><a href="#" class="nav-link">Kontak Kami</a></li>
         </ul>
       </div>
-    </div>
-
-    <div class="w32">
-      <button class="btn btn-primary">Button</button>
-      <button class="btn btn-secondary">Button</button>
     </div>
 
     <script src="./js/app.js"></script>
