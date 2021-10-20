@@ -37,6 +37,7 @@ $(document).ready(function() {
       $('.dropdown').on('click', function() {
           $('.dropdown-menu').toggleClass('expand', 300);
           $('.dropdown-menu').toggleClass('collapse', 300);
+          $('.dropdown-menu').toggleClass('invisible', 500);
       })
     
   })
