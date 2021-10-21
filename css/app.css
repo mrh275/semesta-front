@@ -55,7 +55,7 @@
     }
 
     .navbar {
-        @apply bg-gray-800 w-full sm:max-w-full px-4 py-2 lg:py-0 flex justify-between lg:justify-around;
+        @apply bg-gray-800 bg-opacity-70 w-full sm:max-w-full px-4 py-2 lg:py-0 flex justify-between lg:justify-around;
     }
 
     .brand {
@@ -100,6 +100,14 @@
 
     .dropdown-link {
         @apply block hover:bg-gray-600 pl-9 py-3 w-full
+    }
+
+    .drop-link-lg {
+        @apply px-3 py-2 hover:bg-gray-600 block;
+    }
+
+    .drop-link-short-lg {
+        @apply pl-3 pr-16 py-2 hover:bg-gray-600 block;
     }
 
     .collapse {
