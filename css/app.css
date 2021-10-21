@@ -58,8 +58,12 @@ html {
         @apply bg-red-600 hover:bg-red-500 focus:ring-red-600 focus:ring-opacity-50 active:bg-red-700 text-white
     }
 
+    .btn-hero {
+
+    }
+
     .navbar {
-        @apply bg-gray-800 bg-opacity-70 w-full sm:max-w-full px-4 py-2 lg:py-0 flex justify-between lg:justify-around;
+        @apply bg-gray-800 bg-opacity-70 absolute w-full sm:max-w-full px-4 py-2 lg:py-0 flex justify-between lg:justify-around z-20;
     }
 
     .brand {
@@ -68,6 +72,10 @@ html {
 
     .menuList {
         @apply hidden lg:block;
+    }
+
+    .menuMobile {
+        @apply z-30;
     }
 
     .menuList .menu-nav-lg {
@@ -120,5 +128,77 @@ html {
 
     .expanded {
         @apply h-auto opacity-100;
+    }
+
+    .big-hero {
+        @apply w-full bg-gray-400 z-10;
+    }
+
+    .big-hero .swiper-slide {
+        @apply flex justify-start items-center;
+    }
+
+    .big-hero .img-hero {
+        @apply w-full object-cover object-center h-80;
+    }
+
+    .big-hero .swiper-button-prev, .big-hero .swiper-button-next {
+        @apply text-white;
+    }
+
+    .hero-bg-section {
+        @apply bg-gray-700 bg-opacity-60 w-full h-full absolute flex items-center;
+    }
+
+    .hero-section {
+        @apply ml-5 lg:ml-24 mt-16 lg:mt-0;
+    }
+
+    .hero-section .hero-title {
+        @apply text-xl lg:text-5xl ml-8 lg:ml-0 font-bold text-white;
+    }
+
+    .hero-section .detail-hero {
+        @apply text-white font-semibold ml-8 lg:ml-0 text-base lg:text-xl;
+    }
+
+    .hero-section .hero-desc {
+        @apply text-white w-0 h-0 md:ml-8 lg:ml-0 md:w-3/4 lg:w-2/4 md:h-auto invisible md:visible lg:text-base text-justify my-2;
+    }
+
+    .hero-button {
+        @apply ml-8 lg:ml-0;
+    }
+
+    
+}
+
+@layer utilities {
+    @variants responsive{
+        .img-hero-lg {
+            height: 580px !important;
+        }
+
+        .swiper-pagination > .swiper-pagination-bullet {
+            background: rgb(31, 41, 55);
+            opacity: 1;
+        }
+
+        .swiper-pagination > .swiper-pagination-bullet-active {
+            background: white !important;
+        }
+
+        .swiper-button-next, .swiper-button-prev {
+            background-image: none;
+        }
+
+        .swiper-button-next::after, .swiper-button-prev::after {
+            display: none;
+        }
+
+        .hero-arrow, .author-icon, .date-post-icon {
+            top:2px;
+            transition:0.3s;
+        }
     }
 }
