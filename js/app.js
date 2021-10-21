@@ -73,3 +73,33 @@ $(document).ready(function() {
           $(this).find('.drop-1-lg').toggleClass('collapse', 300);
           $(this).find('.drop-1-lg').toggleClass('invisible', 500);
         });
+
+        $('.read-more').hover(function(){
+          $('.hero-arrow').toggleClass('translate-x-1 transform')
+        })
+
+        // Swiper js
+        const swiper = new Swiper('.swiper', {
+          // Optional parameters
+          loop: true,
+
+          // Autoplay hero images
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+        
+          // If we need pagination
+          pagination: {
+            el: '.swiper-pagination',
+            dynamicBullets: true,
+
+          },
+        
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        
+        });
