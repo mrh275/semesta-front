@@ -170,7 +170,25 @@ html {
         @apply ml-8 lg:ml-0;
     }
 
-    
+    .sambutan {
+        @apply w-3/4 md:w-5/6 xl:w-3/4 h-auto bg-gray-300 md:flex rounded-lg shadow-2xl mx-auto my-8;
+    }
+
+    .sambutan-container-left {
+        @apply xl:w-auto flex justify-center md:block;
+    }
+
+    .sambutan-img {
+        @apply w-32 md:w-full xl:w-max object-center object-cover mt-5 md:mt-0 p-0 md:pr-10 rounded-lg lg:rounded-tr-none lg:rounded-br-none;
+    }
+
+    .sambutan-title {
+        @apply text-primary-dark text-center md:text-left text-xl font-semibold lg:text-3xl py-5;
+    }
+
+    .sambutan-desc {
+        @apply text-sm lg:text-base mx-5 md:mx-0 md:mr-8 xl:mr-10 pb-5 text-justify text-gray-800;
+    }
 }
 
 @layer utilities {
@@ -199,6 +217,10 @@ html {
         .hero-arrow, .author-icon, .date-post-icon {
             top:2px;
             transition:0.3s;
+        }
+
+        .w-380 {
+            width: 208px;
         }
     }
 }
