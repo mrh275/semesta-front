@@ -1066,6 +1066,10 @@ video {
   top: 2.5rem;
 }
 
+.left-0{
+  left: 0px;
+}
+
 .left-full{
   left: 100%;
 }
@@ -1080,6 +1084,10 @@ video {
 
 .z-40{
   z-index: 40;
+}
+
+.m-0{
+  margin: 0px;
 }
 
 .mx-auto{
@@ -1131,6 +1139,12 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-max{
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .transform{
@@ -1239,6 +1253,10 @@ video {
 .bg-gray-800{
   --tw-bg-opacity: 1;
   background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+}
+
+.p-0{
+  padding: 0px;
 }
 
 .px-5{
