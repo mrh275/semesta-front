@@ -14,6 +14,7 @@
         "@tailwindcss/jit": "^0.1.18",
         "autoprefixer": "^10.3.7",
         "postcss": "^8.3.9",
+        "postcss-cli": "^9.0.1",
         "tailwindcss": "^2.2.17",
         "vite": "^2.6.9"
     }
