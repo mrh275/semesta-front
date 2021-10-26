@@ -195,19 +195,19 @@ html {
     }
 
     .berita-container {
-        @apply bg-gray-300 w-full;
+        @apply w-full;
     }
 
     .berita-terbaru-container {
-        @apply  lg:w-full mx-auto pb-8;
+        @apply lg:w-full mx-auto pb-8;
     }
 
     .berita-terbaru-header {
-        @apply bg-primary-dark;
+        @apply bg-primary-dark w-10/12 mx-auto rounded-lg shadow-xl drop-shadow-lg;
     }
 
     .berita-terbaru-title {
-        @apply text-2xl text-white font-semibold mx-5 py-5;
+        @apply text-2xl text-white font-semibold mx-5 py-2;
     }
 
     .berita-wrapper {
