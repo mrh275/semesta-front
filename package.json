@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "dev": "vite",
-        "build": "vite build"
+        "build": "tailwindcss -i ./css/app.css -o ./build/style.css --JIT --purgu=\"./*.html\" --watch"
     },
     "keywords": [],
     "author": "",
