@@ -692,6 +692,7 @@ video {
 
 .navbar {
   position: absolute;
+  top: 0px;
   z-index: 20;
   display: flex;
   width: 100%;
