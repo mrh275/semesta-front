@@ -4,6 +4,19 @@ $(document).ready(function() {
 
     });
 
+    // Navbar sticky on scroll
+    let lastScrollTop = 0;
+    $(window).scroll(function(event){
+      let st = $(this).scrollTop();
+      if(st > lastScrollTop) {
+        $('.navbar').removeClass('absolute');
+        $('.navbar').addClass('fixed');
+      } else {
+        $('.navbar').removeClass('fixed');
+        $('.navbar').addClass('absolute');
+      }
+    });
+
     // Mobile Menu Toggle Animation
     $('.hbButton').click(function(){
       let mMenu = $('.hb-menu');
