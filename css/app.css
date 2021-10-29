@@ -199,10 +199,10 @@ html {
     }
 
     .berita-terbaru-container {
-        @apply lg:w-full mx-auto pb-8;
+        @apply lg:w-full mx-auto;
     }
 
-    .berita-terbaru-header {
+    .berita-terbaru-header, .post-kategori-header {
         @apply bg-primary-dark w-10/12 mx-auto rounded-lg shadow-xl drop-shadow-lg;
     }
 

@@ -1209,7 +1209,6 @@ video {
 .berita-terbaru-container {
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 2rem;
 }
 
 @media (min-width: 1024px){
@@ -1218,7 +1217,7 @@ video {
   }
 }
 
-.berita-terbaru-header {
+.berita-terbaru-header, .post-kategori-header {
   margin-left: auto;
   margin-right: auto;
   width: 83.333333%;
@@ -1394,6 +1393,11 @@ video {
   margin: 0px;
 }
 
+.mx-5{
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -1439,6 +1443,10 @@ video {
 
 .w-12{
   width: 3rem;
+}
+
+.w-10\/12{
+  width: 83.333333%;
 }
 
 .w-full{
@@ -1561,17 +1569,22 @@ video {
   padding-right: 1.25rem;
 }
 
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-.pt-8{
-  padding-top: 2rem;
+.pt-2{
+  padding-top: 0.5rem;
 }
 
-.pb-8{
-  padding-bottom: 2rem;
+.pb-2{
+  padding-bottom: 0.5rem;
 }
 
 .text-center{
@@ -1583,8 +1596,17 @@ video {
   line-height: 1.75rem;
 }
 
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .font-medium{
   font-weight: 500;
+}
+
+.font-semibold{
+  font-weight: 600;
 }
 
 .text-white{
