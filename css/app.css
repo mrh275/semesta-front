@@ -198,36 +198,48 @@ html {
         @apply w-full;
     }
 
-    .berita-terbaru-container {
-        @apply lg:w-full mx-auto;
+    .berita-terbaru-container, .post-kategori-container {
+        @apply lg:w-full mx-auto bg-gray-200;
     }
 
     .berita-terbaru-header, .post-kategori-header {
-        @apply bg-primary-dark w-10/12 mx-auto rounded-lg shadow-xl drop-shadow-lg;
+        @apply w-full block mx-auto;
     }
 
     .berita-terbaru-title {
-        @apply text-2xl text-white font-semibold mx-5 py-2;
+        @apply text-2xl lg:text-4xl text-gray-800 text-center font-semibold mx-5 pt-8 lg:pb-4;
     }
 
     .berita-wrapper {
-        @apply md:w-full w-10/12 lg:w-10/12 md:flex mx-auto justify-between;
+        @apply w-11/12 xl:w-10/12 lg:flex mx-auto justify-between;
+    }
+
+    .b-wrap-1 {
+        @apply lg:mt-2 lg:pt-2 lg:pb-4;
+    }
+
+    .b-wrap-2 {
+        @apply pb-4 lg:pb-8 lg:pt-4;
+    }
+
+    .berita-terbaru {
+        @apply md:ml-2 lg:mr-2;
     }
 
     .card {
-        @apply bg-gray-200 hover:shadow-xl transition rounded-lg md:flex my-4 md:my-0 mx-3;
+        @apply bg-gray-300 hover:shadow-xl transition rounded-lg sm:flex my-4 md:my-0;
     }
 
     .card-title {
-        @apply md:w-10/12 flex content-center;
+        @apply md:w-max flex content-center;
     }
 
     .berita-img {
-        @apply object-cover object-center p-5;
+        @apply object-cover sm:w-96 md:w-64 object-center p-5;
     }
 
     .card-content {
-        @apply mx-5 md:mx-0 md:mr-5 pb-5 md:pb-0 md:my-5;
+        @apply mx-5 sm:mx-0 sm:mr-5 pb-5 sm:pb-0 sm:py-5 md:py-0 md:my-5;
     }
 
     .berita-title {
@@ -240,6 +252,10 @@ html {
 
     .berita-desc {
         @apply text-sm text-justify;
+    }
+
+    .post-kategori-title {
+        @apply text-4xl text-gray-800 text-center font-semibold mx-5 pt-8 pb-4;
     }
 }
 
