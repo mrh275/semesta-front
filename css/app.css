@@ -175,7 +175,7 @@ html {
     }
 
     .sambutan {
-        @apply w-3/4 md:w-5/6 xl:w-3/4 h-auto bg-gray-300 md:flex rounded-lg shadow-2xl mx-auto my-8;
+        @apply w-3/4 md:w-5/6 xl:w-3/4 h-auto bg-gray-200 md:flex rounded-lg shadow-2xl mx-auto my-8;
     }
 
     .sambutan-container-left {
@@ -194,52 +194,52 @@ html {
         @apply text-sm lg:text-base mx-5 md:mx-0 md:mr-8 xl:mr-10 pb-5 text-justify text-gray-800;
     }
 
-    .berita-container {
-        @apply w-full;
+    .wrapper {
+        @apply w-11/12 mx-auto lg:flex lg:justify-between;
+    }
+
+    .wrapper-content {
+        @apply w-full lg:w-8/12 lg:mr-5;
     }
 
     .berita-terbaru-container, .post-kategori-container {
-        @apply lg:w-full mx-auto bg-gray-200;
+        @apply lg:w-full;
     }
 
     .berita-terbaru-header, .post-kategori-header {
-        @apply w-full block mx-auto;
+        @apply w-full block bg-primary rounded-lg mb-4;
     }
 
-    .berita-terbaru-title {
-        @apply text-2xl lg:text-4xl text-gray-800 text-center font-semibold mx-5 pt-8 lg:pb-4;
-    }
-
-    .berita-wrapper {
-        @apply w-11/12 xl:w-10/12 lg:flex mx-auto justify-between;
+    .berita-terbaru-title, .post-kategori-title {
+        @apply text-lg lg:text-2xl text-white font-semibold mx-2 p-2;
     }
 
     .b-wrap-1 {
-        @apply lg:mt-2 lg:pt-2 lg:pb-4;
+        @apply lg:mt-2 lg:pt-2;
     }
 
     .b-wrap-2 {
-        @apply pb-4 lg:pb-8 lg:pt-4;
+        @apply pb-4 lg:pb-4;
     }
 
     .berita-terbaru {
-        @apply md:ml-2 lg:mr-2;
+        @apply block mb-5;
     }
 
     .card {
-        @apply bg-gray-300 hover:shadow-xl transition rounded-lg sm:flex my-4 md:my-0;
+        @apply bg-gray-200 hover:shadow-xl transition rounded-lg sm:flex my-4;
     }
 
     .card-title {
-        @apply md:w-max flex content-center;
+        @apply flex align-middle justify-center;
     }
 
     .berita-img {
-        @apply object-cover sm:w-96 md:w-64 object-center p-5;
+        @apply object-cover w-full sm:w-96 object-center p-5;
     }
 
     .card-content {
-        @apply mx-5 sm:mx-0 sm:mr-5 pb-5 sm:pb-0 sm:py-5 md:py-0 md:my-5;
+        @apply mx-5 sm:mx-0 sm:mr-5 pb-5 sm:pt-5 md:py-0 md:my-5;
     }
 
     .berita-title {
@@ -254,9 +254,51 @@ html {
         @apply text-sm text-justify;
     }
 
-    .post-kategori-title {
-        @apply text-4xl text-gray-800 text-center font-semibold mx-5 pt-8 pb-4;
+    .sidebar {
+        @apply lg:w-4/12 lg:ml-5 rounded-lg;
     }
+
+    .side-card {
+        @apply shadow-lg rounded-lg bg-gray-200;
+    }
+
+    .side-card-header {
+        @apply bg-primary rounded-t-lg w-full;
+    }
+
+    .side-card-title {
+        @apply text-white text-lg md:text-2xl font-semibold mx-3 p-2;
+    }
+
+    .side-card-content {
+        @apply m-4 overflow-hidden h-auto;
+    }
+
+    .popular-side-link {
+        @apply block mb-5;
+    }
+
+    .popular-post-img {
+        @apply w-2/5;
+    }
+
+    .popular-post-content {
+        @apply w-3/5 pl-4;
+    }
+
+    .popular-post-title {
+        @apply text-gray-700 text-base lg:text-lg font-semibold;
+    }
+
+    .popular-post-sub {
+        @apply text-sm text-gray-500;
+    }
+
+    hr.popular-post {
+        @apply bg-gray-500 opacity-50;
+    }
+
+    
 }
 
 @layer utilities {
@@ -289,6 +331,26 @@ html {
 
         .w-380 {
             width: 208px;
+        }
+
+        hr.popular-post {
+            height: 2px;
+        }
+
+        .side-card-content {
+            padding: 0 !important;
+        }
+
+        .popular-post {
+            display: flex !important;
+        }
+
+        h2.popular-post-title {
+            transition: 0.3s
+        }
+
+        .popular-side-link:hover h2.popular-post-title {
+            color: #0099ff;
         }
     }
 }
