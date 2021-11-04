@@ -29,6 +29,31 @@ html {
     transition: .5s;
 }
 
+nav.sticky {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    --tw-bg-opacity: 1;
+    background-color: rgba(209, 213, 219, 1);
+    box-shadow: 0 5px 5px rgba(31, 35, 46, 0.3);
+}
+
+nav.sticky .dropdown-lg, nav.sticky .drop-1-lg {
+    background-color: rgba(209, 213, 219, 1);
+}
+
+nav.sticky a, nav.sticky h2 {
+    color: rgb(31, 35, 46);
+}
+
+nav.sticky .brand {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+nav.sticky .img-brand {
+    width: 32px;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -58,20 +83,20 @@ html {
         @apply bg-red-600 hover:bg-red-500 focus:ring-red-600 focus:ring-opacity-50 active:bg-red-700 text-white
     }
 
-    .btn-hero {
-
-    }
-
     .navbar {
-        @apply bg-gray-800 bg-opacity-70 absolute top-0 w-full sm:max-w-full px-4 py-2 lg:py-0 flex justify-between lg:justify-around z-20;
+        @apply bg-gray-700 bg-opacity-30 absolute w-full sm:max-w-full px-4 py-2 lg:py-8 flex justify-between lg:justify-around z-20;
     }
 
     .brand {
-        @apply lg:ml-5;
+        @apply text-2xl font-semibold lg:ml-5;
+    }
+
+    .img-brand {
+        @apply w-12;
     }
 
     .menuList {
-        @apply hidden lg:block;
+        @apply hidden lg:flex items-center;
     }
 
     .menuMobile {
@@ -103,19 +128,27 @@ html {
     }
 
     .nav-link {
-        @apply inline-block hover:bg-gray-600 pl-6 py-3 w-full lg:px-4 lg:py-3;
+        @apply inline-block font-semibold hover:text-primary transition w-full lg:px-4 ;
+    }
+
+    .dropdown-lg, .drop-1-lg {
+        @apply bg-gray-700;
     }
 
     .dropdown-link {
-        @apply inline-block hover:bg-gray-600 pl-9 py-3 w-full
+        @apply inline-block hover:text-primary transition pl-9 py-3 w-full
     }
 
     .drop-link-lg {
-        @apply px-3 py-2 hover:bg-gray-600 block;
+        @apply px-3 py-2 hover:text-primary transition block;
+    }
+
+    .dropdown-link, .drop-link-lg, .drop-link-lg-1 {
+        @apply font-semibold;
     }
 
     .drop-link-short-lg {
-        @apply pl-3 pr-16 py-2 hover:bg-gray-600 block;
+        @apply pl-3 pr-16 py-2 hover:text-primary transition block;
     }
 
     .collapse {
@@ -303,6 +336,11 @@ html {
 
 @layer utilities {
     @variants responsive{
+
+        nav.navbar, .img-brand, .brand {
+            transition: 0.5s;
+        }
+
         .img-hero-lg {
             height: 580px !important;
         }
