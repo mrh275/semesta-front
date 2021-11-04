@@ -30,28 +30,40 @@ html {
 }
 
 nav.sticky {
-    padding-top: 12px;
-    padding-bottom: 12px;
     --tw-bg-opacity: 1;
     background-color: rgba(209, 213, 219, 1);
     box-shadow: 0 5px 5px rgba(31, 35, 46, 0.3);
 }
 
-nav.sticky .dropdown-lg, nav.sticky .drop-1-lg {
-    background-color: rgba(209, 213, 219, 1);
-}
-
-nav.sticky a, nav.sticky h2 {
+nav.sticky h2 {
     color: rgb(31, 35, 46);
 }
 
-nav.sticky .brand {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-}
-
-nav.sticky .img-brand {
-    width: 32px;
+@media(min-width:1024px) {
+    nav.sticky {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        --tw-bg-opacity: 1;
+        background-color: rgba(209, 213, 219, 1);
+        box-shadow: 0 5px 5px rgba(31, 35, 46, 0.3);
+    }
+    
+    nav.sticky .dropdown-lg, nav.sticky .drop-1-lg {
+        background-color: rgba(209, 213, 219, 1);
+    }
+    
+    nav.sticky a, nav.sticky h2 {
+        color: rgb(31, 35, 46);
+    }
+    
+    nav.sticky .brand {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+    
+    nav.sticky .img-brand {
+        width: 32px;
+    }
 }
 
 @tailwind base;
@@ -84,11 +96,11 @@ nav.sticky .img-brand {
     }
 
     .navbar {
-        @apply bg-gray-700 bg-opacity-30 absolute w-full sm:max-w-full px-4 py-2 lg:py-8 flex justify-between lg:justify-around z-20;
+        @apply bg-gray-700 bg-opacity-0 absolute w-full sm:max-w-full px-4 py-2 lg:py-8 flex justify-between lg:justify-around z-20;
     }
 
     .brand {
-        @apply text-2xl font-semibold lg:ml-5;
+        @apply lg:text-2xl font-semibold lg:ml-5;
     }
 
     .img-brand {
@@ -105,6 +117,10 @@ nav.sticky .img-brand {
 
     .menuList .menu-nav-lg {
         @apply mx-auto hidden lg:inline-flex;
+    }
+
+    .menuListMobile .nav-link {
+        @apply py-2 px-8;
     }
 
     .hbButton {
@@ -168,7 +184,7 @@ nav.sticky .img-brand {
     }
 
     .big-hero .swiper-slide {
-        @apply flex justify-start items-center;
+        @apply flex justify-center items-center;
     }
 
     .big-hero .img-hero {
@@ -180,15 +196,15 @@ nav.sticky .img-brand {
     }
 
     .hero-bg-section {
-        @apply bg-gray-700 bg-opacity-60 w-full h-full absolute flex items-center;
+        @apply bg-gray-800 bg-opacity-70 w-full h-full absolute flex items-center;
     }
 
     .hero-section {
-        @apply ml-5 lg:ml-24 mt-16 lg:mt-0;
+        @apply mx-auto;
     }
 
     .hero-section .hero-title {
-        @apply text-xl lg:text-5xl ml-8 lg:ml-0 font-bold text-white;
+        @apply text-xl lg:text-5xl ml-8 lg:ml-0 font-medium my-2 text-center text-white;
     }
 
     .hero-section .detail-hero {
@@ -205,6 +221,10 @@ nav.sticky .img-brand {
 
     .slider-nav-button {
         @apply h-8 w-8 transform transition;
+    }
+
+    .bi-chevron-left, .bi-chevron-right {
+        @apply text-xl lg:text-4xl;
     }
 
     .sambutan {
@@ -354,9 +374,9 @@ nav.sticky .img-brand {
             background: white !important;
         }
 
-        .swiper-button-next, .swiper-button-prev {
+        /* .swiper-button-next, .swiper-button-prev {
             background-image: none;
-        }
+        } */
 
         .swiper-button-next::after, .swiper-button-prev::after {
             display: none;

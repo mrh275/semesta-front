@@ -28,28 +28,40 @@ html {
 }
 
 nav.sticky {
-  padding-top: 12px;
-  padding-bottom: 12px;
   --tw-bg-opacity: 1;
   background-color: rgba(209, 213, 219, 1);
   box-shadow: 0 5px 5px rgba(31, 35, 46, 0.3);
 }
 
-nav.sticky .dropdown-lg, nav.sticky .drop-1-lg {
-  background-color: rgba(209, 213, 219, 1);
-}
-
-nav.sticky a, nav.sticky h2 {
+nav.sticky h2 {
   color: rgb(31, 35, 46);
 }
 
-nav.sticky .brand {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
+@media(min-width:1024px) {
+  nav.sticky {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    --tw-bg-opacity: 1;
+    background-color: rgba(209, 213, 219, 1);
+    box-shadow: 0 5px 5px rgba(31, 35, 46, 0.3);
+  }
 
-nav.sticky .img-brand {
-  width: 32px;
+  nav.sticky .dropdown-lg, nav.sticky .drop-1-lg {
+    background-color: rgba(209, 213, 219, 1);
+  }
+
+  nav.sticky a, nav.sticky h2 {
+    color: rgb(31, 35, 46);
+  }
+
+  nav.sticky .brand {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  nav.sticky .img-brand {
+    width: 32px;
+  }
 }
 
 /*! tailwindcss v2.2.17 | MIT License | https://tailwindcss.com */
@@ -723,7 +735,7 @@ video {
   justify-content: space-between;
   --tw-bg-opacity: 1;
   background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
-  --tw-bg-opacity: 0.3;
+  --tw-bg-opacity: 0;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.5rem;
@@ -745,14 +757,14 @@ video {
 }
 
 .brand {
-  font-size: 1.5rem;
-  line-height: 2rem;
   font-weight: 600;
 }
 
 @media (min-width: 1024px){
   .brand{
     margin-left: 1.25rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -785,6 +797,13 @@ video {
   .menuList .menu-nav-lg{
     display: inline-flex;
   }
+}
+
+.menuListMobile .nav-link {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 @media (min-width: 1024px){
@@ -998,7 +1017,7 @@ video {
 .big-hero .swiper-slide {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .big-hero .img-hero {
@@ -1022,27 +1041,23 @@ video {
   width: 100%;
   align-items: center;
   --tw-bg-opacity: 1;
-  background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
-  --tw-bg-opacity: 0.6;
+  background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.7;
 }
 
 .hero-section {
-  margin-top: 4rem;
-  margin-left: 1.25rem;
-}
-
-@media (min-width: 1024px){
-  .hero-section{
-    margin-top: 0px;
-    margin-left: 6rem;
-  }
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-section .hero-title {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   margin-left: 2rem;
+  text-align: center;
   font-size: 1.25rem;
   line-height: 1.75rem;
-  font-weight: 700;
+  font-weight: 500;
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
@@ -1052,52 +1067,6 @@ video {
     margin-left: 0px;
     font-size: 3rem;
     line-height: 1;
-  }
-}
-
-.hero-section .detail-hero {
-  margin-left: 2rem;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-weight: 600;
-  --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
-}
-
-@media (min-width: 1024px){
-  .hero-section .detail-hero{
-    margin-left: 0px;
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-}
-
-.hero-section .hero-desc {
-  visibility: hidden;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  height: 0px;
-  width: 0px;
-  text-align: justify;
-  --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
-}
-
-@media (min-width: 768px){
-  .hero-section .hero-desc{
-    visibility: visible;
-    margin-left: 2rem;
-    height: auto;
-    width: 75%;
-  }
-}
-
-@media (min-width: 1024px){
-  .hero-section .hero-desc{
-    margin-left: 0px;
-    width: 50%;
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
 }
 
@@ -1111,22 +1080,16 @@ video {
   }
 }
 
-.slider-nav-button {
-  height: 2rem;
-  width: 2rem;
-  --tw-translate-x: 0;
-  --tw-translate-y: 0;
-  --tw-rotate: 0;
-  --tw-skew-x: 0;
-  --tw-skew-y: 0;
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
-  transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+.bi-chevron-left, .bi-chevron-right {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+@media (min-width: 1024px){
+  .bi-chevron-left, .bi-chevron-right{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
 .sambutan {
@@ -1621,14 +1584,6 @@ hr.popular-post {
   width: max-content;
 }
 
-.hover\:translate-x-1:hover{
-  --tw-translate-x: 0.25rem;
-}
-
-.hover\:-translate-x-1:hover{
-  --tw-translate-x: -0.25rem;
-}
-
 @-webkit-keyframes spin{
   to{
     transform: rotate(360deg);
@@ -1766,9 +1721,9 @@ nav.navbar, .img-brand, .brand {
   transition: 0.5s;
 }
 
-.swiper-button-next, .swiper-button-prev {
-  background-image: none;
-}
+/* .swiper-button-next, .swiper-button-prev {
+            background-image: none;
+        } */
 
 .swiper-button-next::after, .swiper-button-prev::after {
   display: none;
@@ -1800,9 +1755,15 @@ h2.popular-post-title {
 }
 
 @media (min-width: 640px){
+  /* .swiper-button-next, .swiper-button-prev {
+            background-image: none;
+        } */
 }
 
 @media (min-width: 768px){
+  /* .swiper-button-next, .swiper-button-prev {
+            background-image: none;
+        } */
 }
 
 @media (min-width: 1024px){
@@ -1817,10 +1778,20 @@ h2.popular-post-title {
   .lg\:img-hero-lg {
     height: 580px !important;
   }
+
+  /* .swiper-button-next, .swiper-button-prev {
+            background-image: none;
+        } */
 }
 
 @media (min-width: 1280px){
+  /* .swiper-button-next, .swiper-button-prev {
+            background-image: none;
+        } */
 }
 
 @media (min-width: 1536px){
+  /* .swiper-button-next, .swiper-button-prev {
+            background-image: none;
+        } */
 }
