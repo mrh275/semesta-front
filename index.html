@@ -10,11 +10,14 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./build/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
     <!-- JS -->
     <script src="./js/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
   </head>
@@ -218,235 +221,295 @@
         </div>
       </div>
 
-      <!-- Berita Terbaru -->
-      <div class="berita-container">
-        <div class="berita-terbaru-container">
-          <div class="berita-terbaru-header">
-            <h1 class="berita-terbaru-title">
-              Berita Terbaru
-            </h1>
+      <div class="wrapper">
+        <div class="wrapper-content">
+          <!-- Berita Terbaru -->
+          <div class="berita-container">
+            <div class="berita-terbaru-container">
+              <div class="berita-terbaru-header">
+                <h1 class="berita-terbaru-title">
+                  Berita Terbaru
+                </h1>
+              </div>
+    
+              <div class="berita-terbaru-content">
+                <div class="berita-wrapper">
+                  <a href="#" class="berita-terbaru-1 berita-terbaru">
+                    <div class="card">
+                      <div class="card-title">
+                        <img src="./img/img-1.jpg" alt="Berita Terbaru 1" class="berita-img">
+                      </div>
+                      <div class="card-content">
+                        <h1 class="berita-title">
+                          Berita Terbaru 1
+                        </h1>
+                        <span class="berita-sub">
+                          <ion-icon name="person" class="relative author-icon"></ion-icon> <span class="author">Penulis</span>
+                          <ion-icon name="calendar" class="relative date-post-icon"></ion-icon> <span class="date-posted">21 Oktober 2021</span>
+                        </span>
+                        <p class="berita-desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla fugit vitae ut sint odio?
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+    
+                  <a href="#" class="berita-terbaru-2 berita-terbaru">
+                    <div class="card">
+                      <div class="card-title">
+                        <img src="./img/img-2.jpg" alt="Berita Terbaru 2" class="berita-img">
+                      </div>
+                      <div class="card-content">
+                        <h1 class="berita-title">
+                          Berita Terbaru 2
+                        </h1>
+                        <span class="berita-sub">
+                          <ion-icon name="person" class="relative author-icon"></ion-icon> <span class="author">Penulis</span>
+                          <ion-icon name="calendar" class="relative date-post-icon"></ion-icon> <span class="date-posted">21 Oktober 2021</span>
+                        </span>
+                        <p class="berita-desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla fugit vitae ut sint odio?
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="berita-wrapper b-wrap-2">
+                  <a href="#" class="berita-terbaru-3 berita-terbaru">
+                    <div class="card">
+                      <div class="card-title">
+                        <img src="./img/img-3.jpg" alt="Berita Terbaru 3" class="berita-img">
+                      </div>
+                      <div class="card-content">
+                        <h1 class="berita-title">
+                          Berita Terbaru 3
+                        </h1>
+                        <span class="berita-sub">
+                          <ion-icon name="person" class="relative author-icon"></ion-icon> <span class="author">Penulis</span>
+                          <ion-icon name="calendar" class="relative date-post-icon"></ion-icon> <span class="date-posted">21 Oktober 2021</span>
+                        </span>
+                        <p class="berita-desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla fugit vitae ut sint odio?
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+    
+                  <a href="#" class="berita-terbaru-4 berita-terbaru">
+                    <div class="card">
+                      <div class="card-title">
+                        <img src="./img/img-4.jpg" alt="Berita Terbaru 4" class="berita-img">
+                      </div>
+                      <div class="card-content">
+                        <h1 class="berita-title">
+                          Berita Terbaru 4
+                        </h1>
+                        <span class="berita-sub">
+                          <ion-icon name="person" class="relative author-icon"></ion-icon> <span class="author">Penulis</span>
+                          <ion-icon name="calendar" class="relative date-post-icon"></ion-icon> <span class="date-posted">21 Oktober 2021</span>
+                        </span>
+                        <p class="berita-desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla fugit vitae ut sint odio?
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="berita-terbaru-content">
-            <div class="berita-wrapper b-wrap-1">
-              <a href="#" class="berita-terbaru-1 berita-terbaru">
-                <div class="card">
-                  <div class="card-title">
-                    <img src="./img/img-1.jpg" alt="Berita Terbaru 1" class="berita-img">
+          <!-- Ekskul Post -->
+          <div class="ekskul-container">
+            <div class="post-kategori-container">
+              <div class="post-kategori-header">
+                <h1 class="post-kategori-title">Kategori</h1>
+              </div>
+      
+              <div class="post-kategori-wrapper">
+                <a href="#" class="berita-terbaru-1">
+                  <div class="card">
+                    <div class="card-title">
+                      <img src="./img/img-1.jpg" alt="Post Kategori 1" class="berita-img">
+                    </div>
+                    <div class="card-content">
+                      <h1 class="berita-title">
+                        Post Kategori 1
+                      </h1>
+                      <span class="berita-sub">
+                        <ion-icon name="person" class="relative author-icon"></ion-icon> <span class="author">Penulis</span>
+                        <ion-icon name="calendar" class="relative date-post-icon"></ion-icon> <span class="date-posted">21 Oktober 2021</span>
+                      </span>
+                      <p class="berita-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla fugit vitae ut sint odio?
+                      </p>
+                    </div>
                   </div>
-                  <div class="card-content">
-                    <h1 class="berita-title">
-                      Berita Terbaru 1
-                    </h1>
-                    <span class="berita-sub">
-                      <ion-icon name="person" class="relative author-icon"></ion-icon> <span class="author">Penulis</span>
-                      <ion-icon name="calendar" class="relative date-post-icon"></ion-icon> <span class="date-posted">21 Oktober 2021</span>
-                    </span>
-                    <p class="berita-desc">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla fugit vitae ut sint odio?
-                    </p>
+                </a>
+                <a href="#" class="berita-terbaru-1">
+                  <div class="card">
+                    <div class="card-title">
+                      <img src="./img/img-1.jpg" alt="Post Kategori 1" class="berita-img">
+                    </div>
+                    <div class="card-content">
+                      <h1 class="berita-title">
+                        Post Kategori 1
+                      </h1>
+                      <span class="berita-sub">
+                        <ion-icon name="person" class="relative author-icon"></ion-icon> <span class="author">Penulis</span>
+                        <ion-icon name="calendar" class="relative date-post-icon"></ion-icon> <span class="date-posted">21 Oktober 2021</span>
+                      </span>
+                      <p class="berita-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla fugit vitae ut sint odio?
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </a>
-
-              <a href="#" class="berita-terbaru-2 berita-terbaru">
-                <div class="card">
-                  <div class="card-title">
-                    <img src="./img/img-2.jpg" alt="Berita Terbaru 2" class="berita-img">
+                </a>
+                <a href="#" class="berita-terbaru-1">
+                  <div class="card">
+                    <div class="card-title">
+                      <img src="./img/img-1.jpg" alt="Post Kategori 1" class="berita-img">
+                    </div>
+                    <div class="card-content">
+                      <h1 class="berita-title">
+                        Post Kategori 1
+                      </h1>
+                      <span class="berita-sub">
+                        <ion-icon name="person" class="relative author-icon"></ion-icon> <span class="author">Penulis</span>
+                        <ion-icon name="calendar" class="relative date-post-icon"></ion-icon> <span class="date-posted">21 Oktober 2021</span>
+                      </span>
+                      <p class="berita-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla fugit vitae ut sint odio?
+                      </p>
+                    </div>
                   </div>
-                  <div class="card-content">
-                    <h1 class="berita-title">
-                      Berita Terbaru 2
-                    </h1>
-                    <span class="berita-sub">
-                      <ion-icon name="person" class="relative author-icon"></ion-icon> <span class="author">Penulis</span>
-                      <ion-icon name="calendar" class="relative date-post-icon"></ion-icon> <span class="date-posted">21 Oktober 2021</span>
-                    </span>
-                    <p class="berita-desc">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla fugit vitae ut sint odio?
-                    </p>
-                  </div>
-                </div>
-              </a>
+                </a>
+              </div>
             </div>
-            <div class="berita-wrapper b-wrap-2">
-              <a href="#" class="berita-terbaru-3 berita-terbaru">
-                <div class="card">
-                  <div class="card-title">
-                    <img src="./img/img-3.jpg" alt="Berita Terbaru 3" class="berita-img">
-                  </div>
-                  <div class="card-content">
-                    <h1 class="berita-title">
-                      Berita Terbaru 3
-                    </h1>
-                    <span class="berita-sub">
-                      <ion-icon name="person" class="relative author-icon"></ion-icon> <span class="author">Penulis</span>
-                      <ion-icon name="calendar" class="relative date-post-icon"></ion-icon> <span class="date-posted">21 Oktober 2021</span>
-                    </span>
-                    <p class="berita-desc">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla fugit vitae ut sint odio?
-                    </p>
-                  </div>
-                </div>
-              </a>
+          </div>
+        </div>
 
-              <a href="#" class="berita-terbaru-4 berita-terbaru">
-                <div class="card">
-                  <div class="card-title">
-                    <img src="./img/img-4.jpg" alt="Berita Terbaru 4" class="berita-img">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="side-card">
+          <div class="side-card-header">
+            <h1 class="side-card-title">Popular Post</h1>
+          </div>
+          <div class="side-content-wrapper">
+            <div class="side-card-content">
+              <div class="popular-post-wrapper">
+                <a href="#" class="popular-side-link">
+                  <div class="popular-post">
+                    <div class="popular-post-img">
+                      <img src="./img/img-1.jpg" alt="Popular Post 1" class="img-popular-post">
+                    </div>
+                    <div class="popular-post-content">
+                      <h2 class="popular-post-title">
+                        Postingan Sangat Populer
+                      </h2>
+                      <span class="popular-post-sub">
+                        <ion-icon name="person" class="relative author-icon"></ion-icon> <span class="author">Penulis</span>
+                        <ion-icon name="calendar" class="relative date-post-icon"></ion-icon> <span class="date-posted">21 Oktober 2021</span>
+                      </span>
+                    </div>
                   </div>
-                  <div class="card-content">
-                    <h1 class="berita-title">
-                      Berita Terbaru 4
-                    </h1>
-                    <span class="berita-sub">
-                      <ion-icon name="person" class="relative author-icon"></ion-icon> <span class="author">Penulis</span>
-                      <ion-icon name="calendar" class="relative date-post-icon"></ion-icon> <span class="date-posted">21 Oktober 2021</span>
-                    </span>
-                    <p class="berita-desc">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla fugit vitae ut sint odio?
-                    </p>
+                </a>
+    
+                <a href="#" class="popular-side-link">
+                  <div class="popular-post">
+                    <div class="popular-post-img">
+                      <img src="./img/img-1.jpg" alt="Popular Post 1" class="img-popular-post">
+                    </div>
+                    <div class="popular-post-content">
+                      <h2 class="popular-post-title">
+                        Postingan Sangat Populer
+                      </h2>
+                      <span class="popular-post-sub">
+                        <ion-icon name="person" class="relative author-icon"></ion-icon> <span class="author">Penulis</span>
+                        <ion-icon name="calendar" class="relative date-post-icon"></ion-icon> <span class="date-posted">21 Oktober 2021</span>
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </a>
+                </a>
+                <a href="#" class="popular-side-link">
+                  <div class="popular-post">
+                    <div class="popular-post-img">
+                      <img src="./img/img-1.jpg" alt="Popular Post 1" class="img-popular-post">
+                    </div>
+                    <div class="popular-post-content">
+                      <h2 class="popular-post-title">
+                        Postingan Sangat Populer
+                      </h2>
+                      <span class="popular-post-sub">
+                        <ion-icon name="person" class="relative author-icon"></ion-icon> <span class="author">Penulis</span>
+                        <ion-icon name="calendar" class="relative date-post-icon"></ion-icon> <span class="date-posted">21 Oktober 2021</span>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="popular-side-link">
+                  <div class="popular-post">
+                    <div class="popular-post-img">
+                      <img src="./img/img-1.jpg" alt="Popular Post 1" class="img-popular-post">
+                    </div>
+                    <div class="popular-post-content">
+                      <h2 class="popular-post-title">
+                        Postingan Sangat Populer
+                      </h2>
+                      <span class="popular-post-sub">
+                        <ion-icon name="person" class="relative author-icon"></ion-icon> <span class="author">Penulis</span>
+                        <ion-icon name="calendar" class="relative date-post-icon"></ion-icon> <span class="date-posted">21 Oktober 2021</span>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="popular-side-link">
+                  <div class="popular-post">
+                    <div class="popular-post-img">
+                      <img src="./img/img-1.jpg" alt="Popular Post 1" class="img-popular-post">
+                    </div>
+                    <div class="popular-post-content">
+                      <h2 class="popular-post-title">
+                        Postingan Sangat Populer
+                      </h2>
+                      <span class="popular-post-sub">
+                        <ion-icon name="person" class="relative author-icon"></ion-icon> <span class="author">Penulis</span>
+                        <ion-icon name="calendar" class="relative date-post-icon"></ion-icon> <span class="date-posted">21 Oktober 2021</span>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="popular-side-link">
+                  <div class="popular-post">
+                    <div class="popular-post-img">
+                      <img src="./img/img-1.jpg" alt="Popular Post 1" class="img-popular-post">
+                    </div>
+                    <div class="popular-post-content">
+                      <h2 class="popular-post-title">
+                        Postingan Sangat Populer
+                      </h2>
+                      <span class="popular-post-sub">
+                        <ion-icon name="person" class="relative author-icon"></ion-icon> <span class="author">Penulis</span>
+                        <ion-icon name="calendar" class="relative date-post-icon"></ion-icon> <span class="date-posted">21 Oktober 2021</span>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+
+              </div>
+              
             </div>
           </div>
         </div>
       </div>
-
-      <div class="post-kategori-container">
-        <div class="post-kategori-header">
-          <h1 class="post-kategori-title">Kategori</h1>
-        </div>
-
-        <div class="post-kategori-wrapper w-10/12 mx-auto">
-          <a href="#" class="berita-terbaru-1">
-            <div class="card">
-              <div class="card-title">
-                <img src="./img/img-1.jpg" alt="Berita Terbaru 1" class="berita-img">
-              </div>
-              <div class="card-content">
-                <h1 class="berita-title">
-                  Berita Terbaru 1
-                </h1>
-                <span class="berita-sub">
-                  <ion-icon name="person" class="relative author-icon"></ion-icon> <span class="author">Penulis</span>
-                  <ion-icon name="calendar" class="relative date-post-icon"></ion-icon> <span class="date-posted">21 Oktober 2021</span>
-                </span>
-                <p class="berita-desc">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla fugit vitae ut sint odio?
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="#" class="berita-terbaru-1">
-            <div class="card">
-              <div class="card-title">
-                <img src="./img/img-1.jpg" alt="Berita Terbaru 1" class="berita-img">
-              </div>
-              <div class="card-content">
-                <h1 class="berita-title">
-                  Berita Terbaru 1
-                </h1>
-                <span class="berita-sub">
-                  <ion-icon name="person" class="relative author-icon"></ion-icon> <span class="author">Penulis</span>
-                  <ion-icon name="calendar" class="relative date-post-icon"></ion-icon> <span class="date-posted">21 Oktober 2021</span>
-                </span>
-                <p class="berita-desc">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla fugit vitae ut sint odio?
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="#" class="berita-terbaru-1">
-            <div class="card">
-              <div class="card-title">
-                <img src="./img/img-1.jpg" alt="Berita Terbaru 1" class="berita-img">
-              </div>
-              <div class="card-content">
-                <h1 class="berita-title">
-                  Berita Terbaru 1
-                </h1>
-                <span class="berita-sub">
-                  <ion-icon name="person" class="relative author-icon"></ion-icon> <span class="author">Penulis</span>
-                  <ion-icon name="calendar" class="relative date-post-icon"></ion-icon> <span class="date-posted">21 Oktober 2021</span>
-                </span>
-                <p class="berita-desc">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla fugit vitae ut sint odio?
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="post-kategori-container">
-        <div class="post-kategori-header">
-          <h1 class="post-kategori-title">Kategori</h1>
-        </div>
-
-        <div class="post-kategori-wrapper w-10/12 mx-auto">
-          <a href="#" class="berita-terbaru-1">
-            <div class="card">
-              <div class="card-title">
-                <img src="./img/img-1.jpg" alt="Berita Terbaru 1" class="berita-img">
-              </div>
-              <div class="card-content">
-                <h1 class="berita-title">
-                  Berita Terbaru 1
-                </h1>
-                <span class="berita-sub">
-                  <ion-icon name="person" class="relative author-icon"></ion-icon> <span class="author">Penulis</span>
-                  <ion-icon name="calendar" class="relative date-post-icon"></ion-icon> <span class="date-posted">21 Oktober 2021</span>
-                </span>
-                <p class="berita-desc">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla fugit vitae ut sint odio?
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="#" class="berita-terbaru-1">
-            <div class="card">
-              <div class="card-title">
-                <img src="./img/img-1.jpg" alt="Berita Terbaru 1" class="berita-img">
-              </div>
-              <div class="card-content">
-                <h1 class="berita-title">
-                  Berita Terbaru 1
-                </h1>
-                <span class="berita-sub">
-                  <ion-icon name="person" class="relative author-icon"></ion-icon> <span class="author">Penulis</span>
-                  <ion-icon name="calendar" class="relative date-post-icon"></ion-icon> <span class="date-posted">21 Oktober 2021</span>
-                </span>
-                <p class="berita-desc">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla fugit vitae ut sint odio?
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="#" class="berita-terbaru-1">
-            <div class="card">
-              <div class="card-title">
-                <img src="./img/img-1.jpg" alt="Berita Terbaru 1" class="berita-img">
-              </div>
-              <div class="card-content">
-                <h1 class="berita-title">
-                  Berita Terbaru 1
-                </h1>
-                <span class="berita-sub">
-                  <ion-icon name="person" class="relative author-icon"></ion-icon> <span class="author">Penulis</span>
-                  <ion-icon name="calendar" class="relative date-post-icon"></ion-icon> <span class="date-posted">21 Oktober 2021</span>
-                </span>
-                <p class="berita-desc">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla fugit vitae ut sint odio?
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
       </div>
 
       <!-- Javascript -->
       <script src="./js/app.js"></script>
+      <script>
+        $(document).ready(function(){
+          
+        });
+      </script>
   </body>
 </html>
