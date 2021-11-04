@@ -22,7 +22,9 @@ $(document).ready(function() {
       if(st > lastScrollTop) {
         $('.navbar').removeClass('absolute');
         $('.navbar').addClass('fixed');
+        $('.navbar').addClass('sticky');
       } else {
+        $('.navbar').removeClass('sticky');
         $('.navbar').removeClass('fixed');
         $('.navbar').addClass('absolute');
       }
