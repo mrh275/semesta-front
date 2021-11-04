@@ -2,7 +2,18 @@ $(document).ready(function() {
     let menuMobile = document.querySelector('.menuMobile');
     let classMenu = menuMobile.getAttribute('class');
 
+
+    $(".popular-post-wrapper").slick({
+      vertical: true,
+      accessibility: false,
+      arrows: false,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1000,
+      infinite: true,
     });
+});
 
     // Navbar sticky on scroll
     let lastScrollTop = 0;
@@ -116,3 +127,6 @@ $(document).ready(function() {
           },
         
         });
+
+        // Popular Post
+        
