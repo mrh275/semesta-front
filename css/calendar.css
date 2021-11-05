@@ -20,7 +20,7 @@
 .table .row.head{color:#308ff0;text-transform:uppercase}
 .table .row .cell{width:14.28%;padding:5px;font-size: 1.1rem;text-align:center;display:table-cell;}
 .table .row .cell.disable{color:#ccc}
-.table .row .cell span{display:block;width:28px;height:28px;line-height:28px;transition:color,background .4s ease-in-out 0s}
+.table .row .cell span{display:block;margin-left: auto; margin-right: auto;width:28px;height:28px;line-height:28px;transition:color,background .4s ease-in-out 0s}
 .table .row .cell.active span{color:#fff;background-color:#308ff0}
 .months .month[data-active="true"]{transform:rotateY(0)}
 .header [data-action]{color:inherit;position:absolute;top:50%;margin-top:-20px;width:40px;height:40px;z-index:1;opacity:0;transition:all .4s ease-in-out 0s}
