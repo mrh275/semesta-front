@@ -68,7 +68,16 @@ $(document).ready(function() {
           $(this).find('.dropdown-menu').toggleClass('expand', 300);
           $(this).find('.dropdown-menu').toggleClass('collapse', 300);
           $(this).find('.dropdown-menu').toggleClass('invisible', 500);
+          $(this).find('.dropdown-menu').prev().toggleClass('active-open');
       })
+
+      // Dropdown level 1 toggle
+      $('.dropdown-menu li').on('click', '.dropdown-1', function() {
+        $('.dropdown-menu li').find('.dropdown-menu-1').toggleClass('expand', 300);
+        $('.dropdown-menu li').find('.dropdown-menu-1').toggleClass('collapse', 300);
+        $('.dropdown-menu li').find('.dropdown-menu-1').toggleClass('invisible', 500);
+        $('.dropdown-menu li').find('.dropdown-menu-1').prev().toggleClass('active-open');
+    })
 
       // Prevent all unwanted click event
       $('.menuMobile').click(function(event) {
