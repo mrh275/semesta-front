@@ -1022,7 +1022,7 @@ video {
   transition-duration: 150ms;
 }
 
-.dropdown-link, .drop-link-lg, .drop-link-lg-1 {
+.dropdown-link, .drop-link-lg, .drop-link-lg-1, .dropdown-link-lg {
   font-weight: 600;
 }
 

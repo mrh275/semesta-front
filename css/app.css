@@ -204,7 +204,7 @@ nav.sticky h2 {
         @apply px-3 py-2 hover:text-primary transition block;
     }
 
-    .dropdown-link, .drop-link-lg, .drop-link-lg-1 {
+    .dropdown-link, .drop-link-lg, .drop-link-lg-1, .dropdown-link-lg {
         @apply font-semibold;
     }
 
