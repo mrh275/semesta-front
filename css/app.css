@@ -54,6 +54,10 @@ nav.sticky h2 {
     object-fit: cover;
 }
 
+.footer-separator {
+    display: none;
+}
+
 @media(min-width:1024px) {
     nav.sticky {
         padding-top: 12px;
@@ -79,6 +83,32 @@ nav.sticky h2 {
     nav.sticky .img-brand {
         width: 32px;
     }
+}
+
+@media(max-width: 991px) {
+    .footer-wrapper {
+        display: block !important;
+        margin-left: 32px;
+        margin-right: 32px
+    }
+
+    .footer-separator {
+        background-color: #707070;
+        display: block;
+        height: 3px;
+        color: transparent !important;
+        opacity: 0.7;
+        margin: 20px 0;
+    }
+
+    .langganan-input {
+        width: 100%;
+    }
+
+    .bottom-footer {
+        margin-top: 32px;
+    }
+
 }
 
 @tailwind base;
@@ -411,7 +441,7 @@ nav.sticky h2 {
     }
 
     .footer-wrapper {
-        @apply w-11/12 h-96 flex justify-around pt-10;
+        @apply flex justify-around pt-10;
     }
 
     .brand-footer {
@@ -444,6 +474,18 @@ nav.sticky h2 {
 
     .button-form-wrapper {
         @apply mt-4;
+    }
+
+    .bottom-footer {
+        @apply bg-gray-900 mt-8;
+    }
+
+    .bottom-footer-content {
+        @apply w-11/12 lg:flex justify-between mx-auto py-4;
+    }
+
+    .copyright {
+        @apply text-white text-center block lg:inline;
     }
 
 }
