@@ -13,6 +13,7 @@ $(document).ready(function() {
       autoplaySpeed: 2500,
       infinite: true,
     });
+
 });
 
     // Navbar sticky on scroll
@@ -106,23 +107,16 @@ $(document).ready(function() {
 
         // Swiper js
         const swiper = new Swiper('.swiper', {
-          // Optional parameters
           loop: true,
-
           // Autoplay hero images
           // autoplay: {
           //   delay: 2500,
           //   disableOnInteraction: false,
           // },
-        
-          // If we need pagination
           pagination: {
             el: '.swiper-pagination',
             dynamicBullets: true,
-
           },
-        
-          // Navigation arrows
           navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -130,5 +124,23 @@ $(document).ready(function() {
         
         });
 
-        // Popular Post
+        const gallery = new Swiper('.gallery-content', {
+          loop: true,
+          slidesPerView: "auto",
+          centeredSlides: true,
+          spaceBetween: 30,
+          pagination: {
+            clickable: true,
+          },
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        })
+
+        
         
