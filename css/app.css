@@ -29,6 +29,11 @@ html {
     transition: .5s;
 }
 
+.active-open {
+    background-color: white;
+    color: #0099ff;
+}
+
 nav.sticky {
     --tw-bg-opacity: 1;
     background-color: rgba(209, 213, 219, 1);
@@ -197,14 +202,18 @@ nav.sticky h2 {
     }
 
     .dropdown-link {
-        @apply inline-block hover:text-primary transition pl-9 py-3 w-full
+        @apply inline-block hover:text-primary transition pl-10 py-3 w-full
+    }
+
+    .menuListMobile .drop-link-mobile-1 {
+        @apply inline-block hover:text-primary transition pl-14 py-3 w-full
     }
 
     .drop-link-lg {
         @apply px-3 py-2 hover:text-primary transition block;
     }
 
-    .dropdown-link, .drop-link-lg, .drop-link-lg-1, .dropdown-link-lg {
+    .dropdown-link, .drop-link-lg, .drop-link-lg-1, .dropdown-link-lg, .drop-link-mobile-1 {
         @apply font-semibold;
     }
 
