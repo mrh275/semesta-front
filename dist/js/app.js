@@ -14,7 +14,31 @@ $(document).ready(function() {
       infinite: true,
     });
 
+    $('.scrollTop').on('click', function(){
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    })
+
+    $('button.toggleTheme').on('click', function () {
+      $('.toggleTheme').toggleClass('activated');
+      $('.darkMode').toggleClass('showDark', 300);
+      $('.lightMode').toggleClass('showLight', 300);
+      $('body').toggleClass('dark')
+      $('.navbar').toggleClass('dark')
+      $('.sambutan').toggleClass('dark')
+      $('.card').toggleClass('dark')
+      $('.side-card').toggleClass('dark')
+      $('.month').toggleClass('dark')
+      $('.gallery-wrapper').toggleClass('dark')
+      $('.footer').toggleClass('dark')
+      $('.menuMobile').toggleClass('dark')
+    })
 });
+
+    // Scroll To Top Button Visible on Scroll
+    window.addEventListener('scroll', function () { 
+      const scrollBtn = document.querySelector('.scrollTop');
+      scrollBtn.classList.toggle('show', window.scrollY > 400)
+     })
 
     // Navbar sticky on scroll
     let lastScrollTop = 0;
