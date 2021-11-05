@@ -44,6 +44,16 @@ nav.sticky h2 {
     background-size: contain;
 }
 
+.gallery-img-wrapper {
+    width: 240px !important;
+}
+
+.gallery-img {
+    width: 100% !important;
+    height: 95% !important;
+    object-fit: cover;
+}
+
 @media(min-width:1024px) {
     nav.sticky {
         padding-top: 12px;
@@ -356,12 +366,8 @@ nav.sticky h2 {
         @apply bg-gray-500 opacity-50;
     }
 
-    .layanan-content {
-        @apply m-3;
-    }
-
     .layanan-1, .layanan-2 {
-        @apply flex justify-around my-8 mx-4;
+        @apply flex justify-around mt-3 mb-6 mx-4;
     }
 
     .layanan-link {
@@ -375,6 +381,39 @@ nav.sticky h2 {
     .layanan-title {
         @apply text-white font-medium text-lg text-center break-words;
     }
+
+    .gallery-wrapper {
+        @apply bg-gray-200;
+    }
+
+    .gallery-container {
+        @apply w-11/12 mx-auto;
+    }
+
+    .gallery-header {
+        @apply w-full flex justify-center py-5 lg:py-8;
+    }
+
+    .gallery-title {
+        @apply font-semibold text-xl md:text-3xl;
+    }
+
+    .gallery-content {
+        @apply overflow-hidden pb-10;
+    }
+
+    .gallery-wrapper-section {
+        @apply relative;
+    }
+
+    .footer {
+        @apply block bg-gray-800;
+    }
+
+    .footer-wrapper {
+        @apply w-11/12 h-96;
+    }
+
 }
 
 @layer utilities {
@@ -396,10 +435,6 @@ nav.sticky h2 {
         .swiper-pagination > .swiper-pagination-bullet-active {
             background: white !important;
         }
-
-        /* .swiper-button-next, .swiper-button-prev {
-            background-image: none;
-        } */
 
         .swiper-button-next::after, .swiper-button-prev::after {
             display: none;
@@ -434,6 +469,12 @@ nav.sticky h2 {
             color: #0099ff;
         }
 
-        
+        .layanan-title {
+            transition: 0.4s
+        }
+
+        .layanan-link:hover .layanan-title {
+            font-size: 1.25rem;
+        }
     }
 }
