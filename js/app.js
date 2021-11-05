@@ -109,10 +109,10 @@ $(document).ready(function() {
         const swiper = new Swiper('.swiper', {
           loop: true,
           // Autoplay hero images
-          // autoplay: {
-          //   delay: 2500,
-          //   disableOnInteraction: false,
-          // },
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
           pagination: {
             el: '.swiper-pagination',
             dynamicBullets: true,
