@@ -411,7 +411,39 @@ nav.sticky h2 {
     }
 
     .footer-wrapper {
-        @apply w-11/12 h-96;
+        @apply w-11/12 h-96 flex justify-around pt-10;
+    }
+
+    .brand-footer {
+        @apply text-white font-semibold text-2xl block my-auto;
+    }
+
+    .address {
+        @apply text-white;
+    }
+
+    .partner-title {
+        @apply text-white text-lg font-semibold;
+    }
+
+    .partner-list {
+        @apply text-white hover:translate-x-2 transform transition duration-300 my-2;
+    }
+
+    .langganan {
+        @apply text-white font-semibold text-lg;
+    }
+
+    .langganan-form {
+        @apply mt-4;
+    }
+
+    .langganan-input {
+        @apply py-1 pl-2 rounded-lg outline-none focus:ring focus:ring-offset-2 focus:ring-primary transition duration-200;
+    }
+
+    .button-form-wrapper {
+        @apply mt-4;
     }
 
 }
@@ -475,6 +507,11 @@ nav.sticky h2 {
 
         .layanan-link:hover .layanan-title {
             font-size: 1.25rem;
+        }
+
+        .logo-footer {
+            width: 44px;
+            margin-right: 1rem;
         }
     }
 }
