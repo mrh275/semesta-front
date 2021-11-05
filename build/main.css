@@ -27,6 +27,11 @@ html {
   transition: .5s;
 }
 
+.active-open {
+  background-color: white;
+  color: #0099ff;
+}
+
 nav.sticky {
   --tw-bg-opacity: 1;
   background-color: rgba(209, 213, 219, 1);
@@ -1021,7 +1026,7 @@ video {
   width: 100%;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  padding-left: 2.25rem;
+  padding-left: 2.5rem;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
@@ -1030,6 +1035,24 @@ video {
 }
 
 .dropdown-link:hover{
+  --tw-text-opacity: 1;
+  color: rgba(0, 153, 255, var(--tw-text-opacity));
+}
+
+.menuListMobile .drop-link-mobile-1{
+  display: inline-block;
+  width: 100%;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 3.5rem;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.menuListMobile .drop-link-mobile-1:hover{
   --tw-text-opacity: 1;
   color: rgba(0, 153, 255, var(--tw-text-opacity));
 }
@@ -1052,7 +1075,7 @@ video {
   color: rgba(0, 153, 255, var(--tw-text-opacity));
 }
 
-.dropdown-link, .drop-link-lg, .drop-link-lg-1, .dropdown-link-lg{
+.dropdown-link, .drop-link-lg, .drop-link-lg-1, .dropdown-link-lg, .drop-link-mobile-1{
   font-weight: 600;
 }
 
