@@ -4,8 +4,10 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "vite",
-        "build": "tailwindcss -i ./css/app.css -o ./build/style.css --JIT --purge=\"./*.html\" --watch"
+        "dev": "npm-run-all --parallel dev:*",
+        "dev:vite": "vite",
+        "dev:home": "tailwindcss -i ./css/app.css -o ./build/main.css --watch",
+        "build": "tailwindcss -i ./css/app.css -o ./dist/css/main.css --minify"
     },
     "keywords": [],
     "author": "",
@@ -13,6 +15,8 @@
     "devDependencies": {
         "@tailwindcss/jit": "^0.1.18",
         "autoprefixer": "^10.3.7",
+        "npm-run-all": "^4.1.5",
+        "parcel": "^2.0.0",
         "postcss": "^8.3.9",
         "postcss-cli": "^9.0.1",
         "tailwindcss": "^2.2.17",
