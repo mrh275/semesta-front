@@ -39,6 +39,11 @@ nav.sticky h2 {
     color: rgb(31, 35, 46);
 }
 
+.layanan-link {
+    background-image: url('../img/verval-ponsel.png');
+    background-size: contain;
+}
+
 @media(min-width:1024px) {
     nav.sticky {
         padding-top: 12px;
@@ -351,7 +356,25 @@ nav.sticky h2 {
         @apply bg-gray-500 opacity-50;
     }
 
-    
+    .layanan-content {
+        @apply m-3;
+    }
+
+    .layanan-1, .layanan-2 {
+        @apply flex justify-around my-8 mx-4;
+    }
+
+    .layanan-link {
+        @apply w-28 h-28 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-40 lg:h-40 inline-block mx-2;
+    }
+
+    .layanan-dimmer {
+        @apply bg-gray-800 bg-opacity-70 relative w-28 h-28 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-40 lg:h-40 flex justify-center items-center;
+    }
+
+    .layanan-title {
+        @apply text-white font-medium text-lg text-center break-words;
+    }
 }
 
 @layer utilities {
@@ -410,5 +433,7 @@ nav.sticky h2 {
         .popular-side-link:hover h2.popular-post-title {
             color: #0099ff;
         }
+
+        
     }
 }

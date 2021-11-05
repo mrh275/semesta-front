@@ -37,6 +37,11 @@ nav.sticky h2 {
   color: rgb(31, 35, 46);
 }
 
+.layanan-link {
+  background-image: url('../img/verval-ponsel.png');
+  background-size: contain;
+}
+
 @media(min-width:1024px) {
   nav.sticky {
     padding-top: 12px;
@@ -1480,6 +1485,91 @@ hr.popular-post {
   --tw-bg-opacity: 1;
   background-color: rgba(107, 114, 128, var(--tw-bg-opacity));
   opacity: 0.5;
+}
+
+.layanan-content {
+  margin: 0.75rem;
+}
+
+.layanan-1, .layanan-2 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.layanan-link {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  display: inline-block;
+  height: 7rem;
+  width: 7rem;
+}
+
+@media (min-width: 640px){
+  .layanan-link{
+    height: 10rem;
+    width: 10rem;
+  }
+}
+
+@media (min-width: 768px){
+  .layanan-link{
+    height: 12rem;
+    width: 12rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .layanan-link{
+    height: 10rem;
+    width: 10rem;
+  }
+}
+
+.layanan-dimmer {
+  position: relative;
+  display: flex;
+  height: 7rem;
+  width: 7rem;
+  align-items: center;
+  justify-content: center;
+  --tw-bg-opacity: 1;
+  background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.7;
+}
+
+@media (min-width: 640px){
+  .layanan-dimmer{
+    height: 10rem;
+    width: 10rem;
+  }
+}
+
+@media (min-width: 768px){
+  .layanan-dimmer{
+    height: 12rem;
+    width: 12rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .layanan-dimmer{
+    height: 10rem;
+    width: 10rem;
+  }
+}
+
+.layanan-title {
+  overflow-wrap: break-word;
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
 .invisible{
