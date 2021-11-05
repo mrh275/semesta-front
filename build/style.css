@@ -746,32 +746,6 @@ video {
   }
 }
 
-.btn-primary {
-  --tw-bg-opacity: 1;
-  background-color: rgba(0, 153, 255, var(--tw-bg-opacity));
-}
-
-.btn-primary:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgba(0, 187, 255, var(--tw-bg-opacity));
-}
-
-.btn-primary:active{
-  --tw-bg-opacity: 1;
-  background-color: rgba(0, 119, 255, var(--tw-bg-opacity));
-}
-
-.btn-primary{
-  --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
-}
-
-.btn-primary:focus{
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgba(0, 153, 255, var(--tw-ring-opacity));
-  --tw-ring-opacity: 0.5;
-}
-
 .btn-danger {
   --tw-bg-opacity: 1;
   background-color: rgba(220, 38, 38, var(--tw-bg-opacity))
@@ -1137,16 +1111,6 @@ video {
     margin-left: 0px;
     font-size: 3rem;
     line-height: 1;
-  }
-}
-
-.hero-button {
-  margin-left: 2rem;
-}
-
-@media (min-width: 1024px){
-  .hero-button{
-    margin-left: 0px;
   }
 }
 
@@ -2095,7 +2059,7 @@ nav.navbar, .img-brand, .brand {
   display: none;
 }
 
-.hero-arrow, .author-icon, .date-post-icon {
+ .author-icon, .date-post-icon {
   top:2px;
   transition:0.3s;
 }
