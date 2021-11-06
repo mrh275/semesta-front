@@ -12,7 +12,7 @@
 .calendar .header.active .text{transform:rotateX(0deg);opacity:1}
 .months{width:100%;height:280px;position:relative}
 .months .hr{height:1px;margin:15px 0;background:#ccc}
-.month{padding:15px;width:inherit;height:inherit;background:#fff;position:absolute;backface-visibility:hidden;transition:all .4s ease-in-out 0s;box-shadow:0 6px 20px 0 rgba(0,0,0,.19),0 8px 17px 0 rgba(0,0,0,.2)}
+.month{padding:15px;width:inherit;height:inherit;background:#fff;position:absolute;backface-visibility:hidden;transition:all .3s ease-in-out 0s;box-shadow:0 6px 20px 0 rgba(0,0,0,.19),0 8px 17px 0 rgba(0,0,0,.2)}
 .months[data-flow="left"] .month{transform:rotateY(-180deg)}
 .months[data-flow="right"] .month{transform:rotateY(180deg)}
 .table{width:100%;font-size:10px;font-weight:400;display:table}
