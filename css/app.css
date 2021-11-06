@@ -285,7 +285,7 @@ nav.sticky.dark h2, nav.sticky.dark a {
     }
 
     .search-btn {
-        @apply bg-gray-200 hover:bg-gray-100 pt-2 px-2 rounded-md transition;
+        @apply bg-gray-200 hover:bg-gray-100 pt-1 pb-1 px-3 rounded-md transition;
     }
 
     .menuMobile.dark .search-btn {
@@ -293,7 +293,7 @@ nav.sticky.dark h2, nav.sticky.dark a {
     }
 
     .search-icon {
-        @apply text-gray-800 text-xl;
+        @apply text-gray-800 text-xl font-medium;
     }
 
     .menuMobile.dark .search-icon {
@@ -349,7 +349,7 @@ nav.sticky.dark h2, nav.sticky.dark a {
     }
 
     .menuMobile.dark .dropdown-link {
-        @apply text-white;
+        @apply text-white hover:text-primary;
     }
 
     .menuListMobile .drop-link-mobile-1 {
