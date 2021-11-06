@@ -1062,9 +1062,10 @@ video {
   border-radius: 0.375rem;
   --tw-bg-opacity: 1;
   background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  padding-top: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
@@ -1090,6 +1091,7 @@ video {
 .search-icon{
   font-size: 1.25rem;
   line-height: 1.75rem;
+  font-weight: 500;
   --tw-text-opacity: 1;
   color: rgba(31, 41, 55, var(--tw-text-opacity));
 }
@@ -1230,6 +1232,11 @@ video {
 .menuMobile.dark .dropdown-link{
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.menuMobile.dark .dropdown-link:hover{
+  --tw-text-opacity: 1;
+  color: rgba(0, 153, 255, var(--tw-text-opacity));
 }
 
 .menuListMobile .drop-link-mobile-1{
@@ -2384,6 +2391,10 @@ hr.popular-post{
   left: -100%;
 }
 
+.top-0{
+  top: 0px;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -2477,6 +2488,10 @@ hr.popular-post{
   list-style-type: disc;
 }
 
+.items-center{
+  align-items: center;
+}
+
 .justify-start{
   justify-content: flex-start;
 }
@@ -2492,6 +2507,16 @@ hr.popular-post{
 .bg-gray-400{
   --tw-bg-opacity: 1;
   background-color: rgba(156, 163, 175, var(--tw-bg-opacity));
+}
+
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.object-center{
+  -o-object-position: center;
+     object-position: center;
 }
 
 .p-0{
