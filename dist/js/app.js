@@ -2,8 +2,8 @@ $(document).ready(function() {
     let menuMobile = document.querySelector('.menuMobile');
     let classMenu = menuMobile.getAttribute('class');
 
-
-    $(".popular-post-wrapper").slick({
+    // Popular post vertical carousel
+    $("div.popular-post-wrapper").slick({
       vertical: true,
       accessibility: false,
       arrows: false,
@@ -14,10 +14,15 @@ $(document).ready(function() {
       infinite: true,
     });
 
+    // Scrolltop button event
     $('.scrollTop').on('click', function(){
       window.scrollTo({top: 0, behavior: 'smooth'});
     })
+});
 
+    
+
+    // Darkmode toggle event
     $('button.toggleTheme').on('click', function () {
       $('.toggleTheme').toggleClass('activated');
       $('.darkMode').toggleClass('showDark', 300);
@@ -32,7 +37,6 @@ $(document).ready(function() {
       $('.footer').toggleClass('dark')
       $('.menuMobile').toggleClass('dark')
     })
-});
 
     // Scroll To Top Button Visible on Scroll
     window.addEventListener('scroll', function () { 
