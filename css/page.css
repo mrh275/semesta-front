@@ -1,0 +1,54 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .sejarah {
+        @apply relative my-8;
+    }
+
+    .page-hero-section {
+        @apply h-page-hero lg:h-page-hero-lg md:h-page-hero-md sm:h-page-hero-sm transition duration-300;
+    }
+
+    .page-hero {
+        @apply bg-gray-700 bg-opacity-70;
+    }
+
+    .page-hero-title {
+        @apply text-xl sm:text-2xl md:text-4xl lg:text-5xl font-semibold text-white text-center transition duration-300;
+    }
+
+}
+
+@layer utilities {
+
+    @variants responsive{
+
+        .h-page-hero-lg {
+            height: 580px;
+            overflow: hidden;
+        }
+        
+        .h-page-hero-md {
+            height: 480px;
+            overflow: hidden;
+        }
+        
+        .h-page-hero-sm {
+            height: 360px;
+            overflow: hidden;
+        }
+
+        .h-page-hero {
+            height: 240px;
+            overflow: hidden;
+        }
+
+        .h-inherit {
+            height: inherit;
+        }
+
+
+    }
+}
