@@ -31,6 +31,7 @@ $(document).ready(function() {
       $('.navbar').toggleClass('dark')
       $('.sambutan').toggleClass('dark')
       $('.card').toggleClass('dark')
+      $('.page-card').toggleClass('dark')
       $('.side-card').toggleClass('dark')
       $('.month').toggleClass('dark')
       $('.gallery-wrapper').toggleClass('dark')
