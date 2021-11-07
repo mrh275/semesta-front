@@ -1,4 +1,4 @@
-$('.form-comment').on('click', function(e) {
+$('.form-comment').on('submit', function(e) {
     e.preventDefault();
     // Add new comment
     let comments = $('.comments .page-card-content');
