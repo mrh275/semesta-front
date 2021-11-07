@@ -172,6 +172,38 @@
         @apply text-gray-800 mt-3 block relative mr-0 ml-auto
     }
 
+    .comment-form-title {
+        @apply flex justify-start items-center;
+    }
+
+    .form-comment-icon {
+        @apply ml-1;
+    }
+
+    .form-comment-icon .bi-pencil-square {
+        @apply text-lg md:text-xl lg:text-2xl;
+    }
+
+    .comment-input {
+        @apply mb-5;
+    }
+
+    .input-form-comment, .comment-area {
+        @apply w-full rounded-md focus:ring focus:outline-none focus:ring-offset-2 focus:ring-primary transition duration-300 mt-2;
+    }
+
+    .comment-area {
+        @apply box-border h-28 lg:h-44;
+    }
+
+    .form-comment-btn {
+        @apply flex justify-end;
+    }
+
+    .btn-comment {
+        @apply bg-primary-dark text-white hover:bg-primary transition duration-300;
+    }
+
     .page-card.dark {
         @apply bg-gray-700;
     }
@@ -206,6 +238,18 @@
 
     .page-card.dark .tag-link {
         @apply text-sm bg-gray-200 text-gray-800 mx-1 py-1 px-2 rounded-lg hover:bg-primary-dark hover:text-white transition duration-300;
+    }
+
+    .page-card.dark .comment {
+        @apply bg-gray-600;
+    }
+
+    .page-card.dark .username-comment, .page-card.dark .comment-desc, .page-card.dark .btn-reply-comment, .page-card.dark .comment-count {
+        @apply text-gray-200;
+    }
+
+    .page-card.dark .comment-date {
+        @apply text-gray-300;
     }
 
 }
