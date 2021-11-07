@@ -147,7 +147,7 @@
     <div class="content">
         <div class="wrapper sejarah">
             <div class="wrapper-content">
-              <!-- Berita Terbaru -->
+              <!-- Detail Post Section -->
               <div class="berita-container">
                 <div class="berita-terbaru-container">
                   <div class="berita-terbaru-content">
@@ -214,12 +214,14 @@
                               </div>
                           </div>
                         </div>
+
+                        <!-- Comment Section -->
                         <div class="page-card comments">
                             <div class="page-card-title comment-title">
                                 <h1 class="page-title">
                                     Komentar
-                                  </h1>
-                                  <span class="comment-count"><i class="bi bi-chat-dots-fill"></i> 999</span>
+                                </h1>
+                                <span class="comment-count"><i class="bi bi-chat-dots-fill"></i> 999</span>
                             </div>
                             <div class="page-card-content">
                                 <div class="comment">
@@ -290,6 +292,35 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        
+                        <!-- Comment Form Section -->
+                        <div class="page-card comment-form">
+                          <div class="page-card-title comment-form-title">
+                            <h1 class="page-title">
+                              Komentar
+                            </h1>
+                            <span class="form-comment-icon"> <i class="bi bi-pencil-square"></i></span>
+                          </div>
+                          <div class="page-card-content comment-form-wrapper">
+                            <form action="" class="form-comment" method="post">
+                              <div class="comment-input">
+                                <label for="input-comment" class="comment-label">Nama</label><br>
+                                <input type="text" name="nama" id="input-comment" class="input-form-comment">
+                              </div>
+                              <div class="comment-input">
+                                <label for="input-comment" class="comment-label">Email</label><br>
+                                <input type="text" name="email" class="input-form-comment" id="input-comment">
+                              </div>
+                              <div class="comment-input">
+                                <label for="input-comment" class="comment-label">Komentar anda</label><br>
+                                <textarea name="comment-area" id="input-comment" class="comment-area"></textarea>
+                              </div>
+                              <div class="form-comment-btn">
+                                <button class="btn btn-comment">Submit</button>
+                              </div>
+                            </form>
+                          </div>
                         </div>
                       </div>
                     </div>
