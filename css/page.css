@@ -27,6 +27,14 @@
     padding: 12px
 }
 
+.flipped {
+    position: relative;
+    top: 7px;
+    display: inline-block;
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+}
+
 @tailwind components;
 @tailwind utilities;
 
@@ -189,7 +197,7 @@
     }
 
     .input-form-comment, .comment-area {
-        @apply w-full rounded-md focus:ring focus:outline-none focus:ring-offset-2 focus:ring-primary transition duration-300 mt-2;
+        @apply w-full rounded-md focus:ring focus:outline-none focus:ring-offset-2 focus:ring-primary transition duration-300 mt-2 p-2;
     }
 
     .comment-area {
