@@ -282,7 +282,7 @@
                                     <div class="user-comment">
                                         <h2 class="username-comment">User</h2>
                                         <span class="comment-date">
-                                            <i class="bi bi-calendar-event-fill"></i> 05 November 2021
+                                            <i class="bi bi-calendar-event-fill"></i> 06 November 2021
                                         </span>
                                         <p class="comment-desc">
                                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse possimus iste minima aliquid porro reiciendis?
@@ -303,18 +303,21 @@
                             <span class="form-comment-icon"> <i class="bi bi-pencil-square"></i></span>
                           </div>
                           <div class="page-card-content comment-form-wrapper">
-                            <form action="" class="form-comment" method="post">
+                            <div class="replying-comment bg-gray-300 rounded-lg p-3 mb-5">
+                              <span class="reply-sub">Reply <i class="bi bi-reply-fill flipped"></i></span>
+                            </div>
+                            <form class="form-comment" method="post" action="">
                               <div class="comment-input">
-                                <label for="input-comment" class="comment-label">Nama</label><br>
-                                <input type="text" name="nama" id="input-comment" class="input-form-comment">
+                                <label for="input-comment-nama" class="comment-label">Nama</label><br>
+                                <input type="text" name="nama" id="input-comment-nama" class="input-form-comment">
                               </div>
                               <div class="comment-input">
-                                <label for="input-comment" class="comment-label">Email</label><br>
-                                <input type="text" name="email" class="input-form-comment" id="input-comment">
+                                <label for="input-comment-email" class="comment-label">Email</label><br>
+                                <input type="text" name="email" class="input-form-comment" id="input-comment-email">
                               </div>
                               <div class="comment-input">
-                                <label for="input-comment" class="comment-label">Komentar anda</label><br>
-                                <textarea name="comment-area" id="input-comment" class="comment-area"></textarea>
+                                <label for="input-comment-area" class="comment-label">Komentar anda</label><br>
+                                <textarea name="comment-area" id="input-comment-area" class="comment-area"></textarea>
                               </div>
                               <div class="form-comment-btn">
                                 <button class="btn btn-comment">Submit</button>
@@ -510,10 +513,13 @@
         </div>
     </div>
 
-    <button type="button" class="btn scrollTop"><i class="bi bi-arrow-up"></i></button>
+    <button type="submit" class="btn scrollTop"><i class="bi bi-arrow-up"></i></button>
 
     <!-- Javascript -->
     <script src="./dist/js/app.js"></script>
     <script src="./dist/js/page.js"></script>
+    <script>
+      
+    </script>
 </body>
 </html>
