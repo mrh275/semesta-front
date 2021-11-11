@@ -1,22 +1,22 @@
+let comments = $('.comments .page-card-content');
+let inputName = $('#input-comment-nama').val();
+let inputEmail = $('#input-comment-email').val();
+let inputComment = $('#input-comment-area').val();
+let replyComment = document.querySelector('.replying-comment');
+
+// Get current date
+const namaBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+const ambilDate = new Date();
+const tahun = ambilDate.getFullYear();
+const bulan = namaBulan[ambilDate.getMonth()];
+const tanggal = String(ambilDate.getDate()).padStart(2, '0');
+let tglComment = tanggal + ' ' + bulan + ' ' + tahun;
+let commentWrapper = 'comment';
+let commentReplyWrapper = 'comment-1'
+
 $('.btn-comment').on('click', function(e) {
     e.preventDefault();
     // Add new comment
-    let comments = $('.comments .page-card-content');
-    let inputName = $('#input-comment-nama').val();
-    let inputEmail = $('#input-comment-email').val();
-    let inputComment = $('#input-comment-area').val();
-    let replyComment = document.querySelector('.replying-comment');
-
-    // Get current date
-    const namaBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
-    const ambilDate = new Date();
-    const tahun = ambilDate.getFullYear();
-    const bulan = namaBulan[ambilDate.getMonth()];
-    const tanggal = String(ambilDate.getDate()).padStart(2, '0');
-    let tglComment = tanggal + ' ' + bulan + ' ' + tahun;
-    let commentWrapper = 'comment';
-    let commentReplyWrapper = 'comment-1'
-
     if(replyComment.getElementsByClassName('user-comment').length != 0) {
         let insertComment = `<div class="${commentWrapper} ${commentReplyWrapper}">
         <div class="user-profile-comment w-max">
@@ -37,7 +37,8 @@ $('.btn-comment').on('click', function(e) {
     comments.append(insertComment);
     replyComment.removeChild(replyComment.lastChild);
     } else {
-        let insertComment = `<div class="${commentWrapper}">
+        let insertComment = `
+        <div class="${commentWrapper}">
         <div class="user-profile-comment w-max">
             <img src="./img/no-profile-comment.png" alt="User" class="user-img-comment">
         </div>
@@ -61,11 +62,23 @@ $('.btn-comment').on('click', function(e) {
 
     // Select reply comment
     const replybtn = document.querySelectorAll('.btn-reply-comment');
+    let cloneComment;
     replybtn.forEach(item => {
         item.addEventListener('click', event => {
             let getComment = item.parentElement;
-            let cloneComment = getComment.cloneNode(true);
+            cloneComment = getComment.cloneNode(true)
+            let buton = cloneComment.getElementsByTagName('button');
+            console.log(buton)
             let replyWrapper = document.querySelector('.replying-comment');
-            replyWrapper.appendChild(cloneComment)      
+            let replyTag = document.createElement('span');
+            replyTag.classList.add('reply-sub')
+            replyTag.innerHTML = 'Reply <i class="bi bi-reply-fill flipped"></i>'
+            // cloneComment.find(".btn-reply-comment").remove();
+            replyWrapper.append(replyTag, cloneComment)
+            // replyWrapper.find(".btn-reply-comment").remove();
         })
     })
+
+    function removeBtn() {
+        replyComment.getElementsByTagName('button').remove();
+    }

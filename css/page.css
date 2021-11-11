@@ -212,6 +212,10 @@
         @apply bg-primary-dark text-white hover:bg-primary transition duration-300;
     }
 
+    .replying-comment {
+        @apply bg-gray-300 rounded-lg p-3 mb-5;
+    }
+
     .page-card.dark {
         @apply bg-gray-700;
     }
@@ -258,6 +262,14 @@
 
     .page-card.dark .comment-date {
         @apply text-gray-300;
+    }
+
+    .page-card.dark .replying-comment {
+        @apply bg-gray-600;
+    }
+
+    .page-card.dark .form-comment-icon, .page-card.dark .reply-sub, .page-card.dark .comment-label {
+        @apply text-white;
     }
 
 }

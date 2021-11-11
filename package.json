@@ -7,6 +7,7 @@
         "dev": "npm-run-all --parallel dev:*",
         "dev:vite": "vite",
         "dev:css": "tailwindcss -i ./css/page.css -o ./build/page.css --watch",
+        "dev:app": "tailwindcss -i ./css/app.css -o ./build/main.css --watch",
         "build": "tailwindcss -i ./css/app.css -o ./dist/css/main.css --minify"
     },
     "keywords": [],

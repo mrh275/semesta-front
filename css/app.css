@@ -83,6 +83,7 @@ nav.sticky.dark h2, nav.sticky.dark a {
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
+    z-index: 99;
 }
 
 .scrollTop.show {

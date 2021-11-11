@@ -592,6 +592,14 @@
   background-color: rgba(0, 153, 255, var(--tw-bg-opacity));
 }
 
+.replying-comment {
+  margin-bottom: 1.25rem;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgba(209, 213, 219, var(--tw-bg-opacity));
+  padding: 0.75rem;
+}
+
 .page-card.dark {
   --tw-bg-opacity: 1;
   background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
@@ -713,6 +721,16 @@
   color: rgba(209, 213, 219, var(--tw-text-opacity));
 }
 
+.page-card.dark .replying-comment {
+  --tw-bg-opacity: 1;
+  background-color: rgba(75, 85, 99, var(--tw-bg-opacity));
+}
+
+.page-card.dark .form-comment-icon, .page-card.dark .reply-sub, .page-card.dark .comment-label {
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
 .invisible {
   visibility: hidden;
 }
@@ -800,10 +818,6 @@
   margin-left: 1.25rem;
 }
 
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-
 .block {
   display: block;
 }
@@ -866,18 +880,9 @@
   overflow-y: auto;
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
-}
-
 .bg-gray-400 {
   --tw-bg-opacity: 1;
   background-color: rgba(156, 163, 175, var(--tw-bg-opacity));
-}
-
-.bg-gray-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgba(209, 213, 219, var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -892,10 +897,6 @@
 
 .p-0 {
   padding: 0px;
-}
-
-.p-3 {
-  padding: 0.75rem;
 }
 
 .px-5 {
