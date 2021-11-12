@@ -73,9 +73,7 @@ $('.btn-comment').on('click', function(e) {
             let replyTag = document.createElement('span');
             replyTag.classList.add('reply-sub')
             replyTag.innerHTML = 'Reply <i class="bi bi-reply-fill flipped"></i>'
-            // cloneComment.find(".btn-reply-comment").remove();
             replyWrapper.append(replyTag, cloneComment)
-            // replyWrapper.find(".btn-reply-comment").remove();
         })
     })
 
