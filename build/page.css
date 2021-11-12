@@ -655,6 +655,28 @@
   transition-duration: 200ms;
 }
 
+.footer.single-page {
+  --tw-bg-opacity: 1;
+  background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
+}
+
+.bottom-footer.single-page {
+  margin-top: 2rem;
+  --tw-bg-opacity: 1;
+  background-color: rgba(156, 163, 175, var(--tw-bg-opacity));
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 300ms;
+}
+
+.footer.dark .bottom-footer.single-page {
+  --tw-bg-opacity: 1;
+  background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
+}
+
 .page-card.dark {
   --tw-bg-opacity: 1;
   background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
@@ -784,6 +806,11 @@
 .page-card.dark .form-comment-icon, .page-card.dark .reply-sub, .page-card.dark .comment-label {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.footer.dark.single-page {
+  --tw-bg-opacity: 1;
+  background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
 }
 
 .invisible {

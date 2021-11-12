@@ -224,6 +224,18 @@
         @apply bg-gray-300 rounded-lg p-3 mb-5 transition duration-200;
     }
 
+    .footer.single-page {
+        @apply bg-gray-200
+    }
+
+    .bottom-footer.single-page {
+        @apply bg-gray-400 mt-8 transition duration-300;
+    }
+
+    .footer.dark .bottom-footer.single-page {
+        @apply bg-gray-900;
+    }
+
     .page-card.dark {
         @apply bg-gray-700;
     }
@@ -278,6 +290,10 @@
 
     .page-card.dark .form-comment-icon, .page-card.dark .reply-sub, .page-card.dark .comment-label {
         @apply text-white;
+    }
+
+    .footer.dark.single-page {
+        @apply bg-gray-700;
     }
 
 }
