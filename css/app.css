@@ -345,6 +345,10 @@ nav.sticky.dark h2, nav.sticky.dark a {
         @apply bg-gray-900;
     }
 
+    .navbar.dark .nav-link, .navbar.dark .drop-link-lg,  .navbar.dark .dropdown-link-lg, .navbar.dark .drop-link-lg-1 {
+        @apply hover:text-primary-light;
+    }
+
     .dropdown-link {
         @apply inline-block hover:text-primary transition pl-10 py-3 w-full
     }

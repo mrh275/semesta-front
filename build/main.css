@@ -1212,6 +1212,11 @@ video {
   background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
 }
 
+.navbar.dark .nav-link:hover, .navbar.dark .drop-link-lg:hover, .navbar.dark .dropdown-link-lg:hover, .navbar.dark .drop-link-lg-1:hover{
+  --tw-text-opacity: 1;
+  color: rgba(0, 187, 255, var(--tw-text-opacity));
+}
+
 .dropdown-link{
   display: inline-block;
   width: 100%;
