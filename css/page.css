@@ -35,6 +35,10 @@
     transform: scaleY(-1);
 }
 
+.replying-comment {
+    display: none;
+}
+
 @tailwind components;
 @tailwind utilities;
 
@@ -149,7 +153,7 @@
     }
 
     .comment {
-        @apply w-auto bg-gray-300 rounded-lg mb-5;
+        @apply w-auto bg-gray-300 rounded-lg mb-5 transition duration-200;
     }
 
     .comment.comment-1 {
@@ -165,19 +169,19 @@
     }
 
     .username-comment {
-        @apply text-xl text-gray-800 font-semibold;
+        @apply text-xl text-gray-800 font-semibold transition duration-200;
     }
 
     .comment-date {
-        @apply text-sm text-gray-500;
+        @apply text-sm text-gray-500 transition duration-200;
     }
 
     .comment-desc {
-        @apply text-gray-800 text-base text-justify mt-3;
+        @apply text-gray-800 text-base text-justify mt-3 transition duration-200;
     }
 
     .btn-reply-comment {
-        @apply text-gray-800 mt-3 block relative mr-0 ml-auto
+        @apply text-gray-800 mt-3 block relative mr-0 ml-auto transition duration-200;
     }
 
     .comment-form-title {
@@ -189,7 +193,7 @@
     }
 
     .form-comment-icon .bi-pencil-square {
-        @apply text-lg md:text-xl lg:text-2xl;
+        @apply text-lg md:text-xl lg:text-2xl transition duration-200;
     }
 
     .comment-input {
@@ -204,6 +208,10 @@
         @apply box-border h-28 lg:h-44;
     }
 
+    .comment-label {
+        @apply transition duration-200;
+    }
+
     .form-comment-btn {
         @apply flex justify-end;
     }
@@ -213,7 +221,7 @@
     }
 
     .replying-comment {
-        @apply bg-gray-300 rounded-lg p-3 mb-5;
+        @apply bg-gray-300 rounded-lg p-3 mb-5 transition duration-200;
     }
 
     .page-card.dark {
