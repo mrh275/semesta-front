@@ -22,6 +22,7 @@ semesta front adalah sebuah paket laman untuk frontend website sekolah. Paket in
 - jQueryUI
 - slick.js
 - SwiperJS
+- SimpleLightbox.js
 
 ## Icon Library/Framework
 - Bootstrap Icon
