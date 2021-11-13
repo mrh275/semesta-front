@@ -232,6 +232,22 @@
         @apply bg-gray-400 mt-8 transition duration-300;
     }
 
+    .pagination-wrapper {
+        @apply  w-full flex justify-center;
+    }
+
+    .btn-pagination-container {
+        @apply block mt-3 mb-8;
+    }
+
+    .btn-pagination {
+        @apply inline-block w-9;
+    }
+
+    .btn.btn-page-active {
+        @apply bg-primary;
+    }
+
     .footer.dark .bottom-footer.single-page {
         @apply bg-gray-900;
     }

@@ -672,6 +672,28 @@
   transition-duration: 300ms;
 }
 
+.pagination-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.btn-pagination-container {
+  margin-top: 0.75rem;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.btn-pagination {
+  display: inline-block;
+  width: 2.25rem;
+}
+
+.btn.btn-page-active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(0, 153, 255, var(--tw-bg-opacity));
+}
+
 .footer.dark .bottom-footer.single-page {
   --tw-bg-opacity: 1;
   background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
@@ -857,10 +879,6 @@
   z-index: 10;
 }
 
-.z-40 {
-  z-index: 40;
-}
-
 .m-0 {
   margin: 0px;
 }
@@ -886,6 +904,10 @@
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
 }
 
 .mt-4 {
