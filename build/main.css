@@ -2380,14 +2380,6 @@ hr.popular-post{
   position: relative;
 }
 
-.left-0{
-  left: 0px;
-}
-
-.bottom-5{
-  bottom: 1.25rem;
-}
-
 .left-full{
   left: 100%;
 }
@@ -2402,6 +2394,14 @@ hr.popular-post{
 
 .top-0{
   top: 0px;
+}
+
+.left-0{
+  left: 0px;
+}
+
+.bottom-5{
+  bottom: 1.25rem;
 }
 
 .z-10{
@@ -2467,12 +2467,6 @@ hr.popular-post{
   height: 100%;
 }
 
-.w-max{
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-}
-
 .w-8{
   width: 2rem;
 }
@@ -2487,6 +2481,12 @@ hr.popular-post{
 
 .w-0{
   width: 0px;
+}
+
+.w-max{
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .cursor-pointer{
