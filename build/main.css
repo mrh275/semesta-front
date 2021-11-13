@@ -907,6 +907,29 @@ video {
   }
 }
 
+.btn-secondary{
+  --tw-bg-opacity: 1;
+  background-color: rgba(75, 85, 99, var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.btn-secondary:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgba(107, 114, 128, var(--tw-bg-opacity));
+}
+
+.btn-secondary:focus{
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgba(75, 85, 99, var(--tw-ring-opacity));
+  --tw-ring-opacity: 0.5;
+}
+
+.btn-secondary:active{
+  --tw-bg-opacity: 1;
+  background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
+}
+
 .btn-danger{
   --tw-bg-opacity: 1;
   background-color: rgba(220, 38, 38, var(--tw-bg-opacity));
@@ -1180,6 +1203,17 @@ video {
 .menuListMobile .nav-link{
   --tw-text-opacity: 1;
   color: rgba(31, 41, 55, var(--tw-text-opacity));
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 300ms;
+}
+
+.menuListMobile .nav-link:hover{
+  --tw-text-opacity: 1;
+  color: rgba(0, 153, 255, var(--tw-text-opacity));
 }
 
 .menuMobile.dark .menuListMobile .nav-link{
@@ -2451,8 +2485,28 @@ hr.popular-post{
   margin-left: 1.25rem;
 }
 
+.mt-5{
+  margin-top: 1.25rem;
+}
+
+.mt-7{
+  margin-top: 1.75rem;
+}
+
+.mb-8{
+  margin-bottom: 2rem;
+}
+
+.mt-2{
+  margin-top: 0.5rem;
+}
+
 .block{
   display: block;
+}
+
+.inline-block{
+  display: inline-block;
 }
 
 .flex{
@@ -2487,6 +2541,10 @@ hr.popular-post{
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+}
+
+.w-9{
+  width: 2.25rem;
 }
 
 .cursor-pointer{
@@ -2540,6 +2598,11 @@ hr.popular-post{
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .font-medium{

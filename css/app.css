@@ -326,7 +326,7 @@ nav.sticky.dark h2, nav.sticky.dark a {
     }
 
     .menuListMobile .nav-link {
-        @apply text-gray-800;
+        @apply text-gray-800 hover:text-primary transition duration-300;
     }
 
     .menuMobile.dark .menuListMobile .nav-link {
