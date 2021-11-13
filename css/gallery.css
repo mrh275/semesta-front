@@ -1,0 +1,22 @@
+.img-gallery {
+    max-width: 240px;
+    max-height: 180px;
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .gallery-hero-section {
+        @apply h-96;
+    }
+
+    .gallery-wrapper {
+        @apply w-full;
+    }
+
+    .img-gallery {
+        @apply m-5
+    }
+}
