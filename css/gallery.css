@@ -1,0 +1,21 @@
+.img-gallery {
+
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .gallery-hero-section {
+        @apply h-96;
+    }
+
+    .gallery-wrapper {
+        @apply w-full;
+    }
+
+    .img-gallery {
+        @apply m-5 max-w-xs
+    }
+}
