@@ -481,15 +481,15 @@ nav.sticky.dark h2, nav.sticky.dark a {
         @apply w-full lg:w-8/12 lg:mr-5;
     }
 
-    .content-terbaru-container, .post-kategori-container {
+    .berita-terbaru-container, .post-kategori-container {
         @apply lg:w-full;
     }
 
-    .content-terbaru-header, .post-kategori-header {
+    .berita-terbaru-header, .post-kategori-header {
         @apply w-full block bg-primary rounded-lg mb-4;
     }
 
-    .content-terbaru-title, .post-kategori-title {
+    .berita-terbaru-title, .post-kategori-title {
         @apply text-lg lg:text-2xl text-white font-semibold mx-2 p-2;
     }
 
@@ -501,7 +501,7 @@ nav.sticky.dark h2, nav.sticky.dark a {
         @apply pb-4 lg:pb-4;
     }
 
-    .content-terbaru {
+    .berita-terbaru {
         @apply block mb-5;
     }
 
@@ -517,7 +517,7 @@ nav.sticky.dark h2, nav.sticky.dark a {
         @apply flex align-middle justify-center;
     }
 
-    .content-img {
+    .berita-img {
         @apply object-cover w-full sm:w-96 object-center p-5;
     }
 
@@ -525,27 +525,27 @@ nav.sticky.dark h2, nav.sticky.dark a {
         @apply mx-5 sm:mx-0 sm:mr-5 pb-5 sm:pt-5 md:py-0 md:my-5;
     }
 
-    .content-title {
+    .berita-title {
         @apply text-xl text-primary-dark font-semibold transition duration-300;
     }
 
-    .card.dark .content-title {
+    .card.dark .berita-title {
         @apply text-primary-light;
     }
 
-    .content-sub {
+    .berita-sub {
         @apply text-gray-600 text-xs transition duration-300;
     }
 
-    .card.dark .content-sub {
+    .card.dark .berita-sub {
         @apply text-gray-300;
     }
 
-    .content-desc {
+    .berita-desc {
         @apply text-sm text-justify transition duration-300;
     }
 
-    .card.dark .content-desc {
+    .card.dark .berita-desc {
         @apply text-white;
     }
 

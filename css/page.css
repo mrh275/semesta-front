@@ -196,15 +196,15 @@
         @apply text-lg md:text-xl lg:text-2xl transition duration-200;
     }
 
-    .comment-input {
+    .comment-input, .contact-input {
         @apply mb-5;
     }
 
-    .input-form-comment, .comment-area {
+    .input-form-comment, .comment-area, .input-form-contact, .contact-area {
         @apply w-full rounded-md focus:ring focus:outline-none focus:ring-offset-2 focus:ring-primary transition duration-300 mt-2 p-2;
     }
 
-    .comment-area {
+    .comment-area, .contact-area {
         @apply box-border h-28 lg:h-44;
     }
 
@@ -212,11 +212,11 @@
         @apply transition duration-200;
     }
 
-    .form-comment-btn {
+    .form-comment-btn, .form-contact-btn {
         @apply flex justify-end;
     }
 
-    .btn-comment {
+    .btn-comment, .btn-contact {
         @apply bg-primary-dark text-white hover:bg-primary transition duration-300;
     }
 
