@@ -1302,10 +1302,13 @@ video {
 
 .drop-link-short-lg{
   display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 0.75rem;
-  padding-right: 4rem;
+  padding-right: 0.75rem;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;

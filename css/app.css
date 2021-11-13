@@ -378,7 +378,7 @@ nav.sticky.dark h2, nav.sticky.dark a {
     }
 
     .drop-link-short-lg {
-        @apply pl-3 pr-16 py-2 hover:text-primary transition block;
+        @apply pl-3 pr-3 py-2 hover:text-primary transition block w-max;
     }
 
     .collapse {
