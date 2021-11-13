@@ -73,7 +73,7 @@
     }
 
     .page-title {
-        @apply text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-primary mb-1;
+        @apply text-xl md:text-2xl lg:text-3xl font-semibold text-primary mb-1;
     }
 
     .page-sub {

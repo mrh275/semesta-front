@@ -178,18 +178,11 @@
 
 .page-title {
   margin-bottom: 0.25rem;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgba(0, 153, 255, var(--tw-text-opacity));
-}
-
-@media (min-width: 640px) {
-  .page-title {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
 }
 
 @media (min-width: 768px) {
@@ -968,6 +961,10 @@
   list-style-type: disc;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .items-center {
   align-items: center;
 }
@@ -997,6 +994,10 @@
 .object-center {
   -o-object-position: center;
      object-position: center;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .p-0 {
