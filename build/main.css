@@ -1724,7 +1724,7 @@ video {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   padding: 0.5rem;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 600;
   --tw-text-opacity: 1;
@@ -2442,10 +2442,6 @@ hr.popular-post{
   z-index: 10;
 }
 
-.z-40{
-  z-index: 40;
-}
-
 .m-0{
   margin: 0px;
 }
@@ -2473,6 +2469,10 @@ hr.popular-post{
   margin-bottom: 1rem;
 }
 
+.mt-7{
+  margin-top: 1.75rem;
+}
+
 .mt-4{
   margin-top: 1rem;
 }
@@ -2485,28 +2485,8 @@ hr.popular-post{
   margin-left: 1.25rem;
 }
 
-.mt-5{
-  margin-top: 1.25rem;
-}
-
-.mt-7{
-  margin-top: 1.75rem;
-}
-
-.mb-8{
-  margin-bottom: 2rem;
-}
-
-.mt-2{
-  margin-top: 0.5rem;
-}
-
 .block{
   display: block;
-}
-
-.inline-block{
-  display: inline-block;
 }
 
 .flex{
@@ -2543,16 +2523,16 @@ hr.popular-post{
   width: max-content;
 }
 
-.w-9{
-  width: 2.25rem;
-}
-
 .cursor-pointer{
   cursor: pointer;
 }
 
 .list-disc{
   list-style-type: disc;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
 }
 
 .items-center{
@@ -2586,6 +2566,10 @@ hr.popular-post{
      object-position: center;
 }
 
+.p-8{
+  padding: 2rem;
+}
+
 .p-0{
   padding: 0px;
 }
@@ -2598,11 +2582,6 @@ hr.popular-post{
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.text-base{
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 .font-medium{

@@ -490,7 +490,7 @@ nav.sticky.dark h2, nav.sticky.dark a {
     }
 
     .berita-terbaru-title, .post-kategori-title {
-        @apply text-lg lg:text-2xl text-white font-semibold mx-2 p-2;
+        @apply text-xl lg:text-2xl text-white font-semibold mx-2 p-2;
     }
 
     .b-wrap-1 {
