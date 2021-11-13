@@ -1,6 +1,5 @@
 .img-gallery {
-    max-width: 240px;
-    max-height: 180px;
+
 }
 
 @tailwind components;
@@ -17,6 +16,6 @@
     }
 
     .img-gallery {
-        @apply m-5
+        @apply m-5 max-w-xs
     }
 }
