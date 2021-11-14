@@ -868,6 +868,22 @@
   bottom: 1.25rem;
 }
 
+.top-auto {
+  top: auto;
+}
+
+.top-full {
+  top: 100%;
+}
+
+.top-2\/4 {
+  top: 50%;
+}
+
+.top-20 {
+  top: 5rem;
+}
+
 .z-10 {
   z-index: 10;
 }

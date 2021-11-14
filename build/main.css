@@ -1342,7 +1342,7 @@ video {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 0.75rem;
-  padding-right: 0.75rem;
+  padding-right: 2rem;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
@@ -2436,6 +2436,22 @@ hr.popular-post{
 
 .bottom-5{
   bottom: 1.25rem;
+}
+
+.top-auto{
+  top: auto;
+}
+
+.top-full{
+  top: 100%;
+}
+
+.top-2\/4{
+  top: 50%;
+}
+
+.top-20{
+  top: 5rem;
 }
 
 .z-10{
