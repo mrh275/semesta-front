@@ -3,13 +3,12 @@ semesta front adalah sebuah paket laman untuk frontend website sekolah. Paket in
 
 ## Fitur halaman
 1. Landing Page
-2. Single Post
-3. Kategori Post
-4. Archive Post
+2. Single Page
+3. Category Page
+4. Article Page
 5. Galeri
-6. Custom Page
-7. About Page
-8. Kontak Page
+6. Static Page
+7. Contact Page
 
 ## Teknologi yang digunakan
 - HTML
@@ -28,3 +27,5 @@ semesta front adalah sebuah paket laman untuk frontend website sekolah. Paket in
 - Bootstrap Icon
 - IonIcon
 - Font Awesome 4
+
+## Made with :heart: by Muhamad Ramdani Hidayatullah
