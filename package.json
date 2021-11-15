@@ -9,7 +9,10 @@
         "dev:css": "tailwindcss -i ./css/page.css -o ./build/page.css --watch",
         "dev:app": "tailwindcss -i ./css/app.css -o ./build/main.css --watch",
         "dev:gallery": "tailwindcss -i ./css/gallery.css -o ./build/gallery.css --watch",
-        "build": "tailwindcss -i ./css/app.css -o ./dist/css/main.css --minify"
+        "build": "npm-run-all --parallel build:*",
+        "build:main": "tailwindcss -i ./css/app.css -o ./dist/css/main.css --minify",
+        "build:page": "tailwindcss -i ./css/page.css -o ./dist/css/page.css --minify",
+        "build:gallery": "tailwindcss -i ./css/gallery.css -o ./dist/css/gallery.css --minify"
     },
     "keywords": [],
     "author": "",
