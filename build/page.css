@@ -848,8 +848,8 @@
   left: 100%;
 }
 
-.top-10 {
-  top: 2.5rem;
+.top-20 {
+  top: 5rem;
 }
 
 .-left-full {
@@ -866,10 +866,6 @@
 
 .bottom-5 {
   bottom: 1.25rem;
-}
-
-.top-20 {
-  top: 5rem;
 }
 
 .z-10 {
