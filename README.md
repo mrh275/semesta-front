@@ -27,3 +27,5 @@ semesta front adalah sebuah paket laman untuk frontend website sekolah. Paket in
 - Bootstrap Icon
 - IonIcon
 - Font Awesome 4
+
+## Made with :heart: by Muhamad Ramdani Hidayatullah
