@@ -1,4 +1,4 @@
-# school-front
+# semesta-front
 semesta front adalah sebuah paket laman untuk frontend website sekolah. Paket ini dibuat berdasarkan studi kasus pada tempat kerja saya. Yaitu sebuah sekolah negeri di kabupaten Karawang.
 
 ## Fitur halaman
@@ -27,3 +27,5 @@ semesta front adalah sebuah paket laman untuk frontend website sekolah. Paket in
 - Bootstrap Icon
 - IonIcon
 - Font Awesome 4
+
+## Made with :heart: by Muhamad Ramdani Hidayatullah
