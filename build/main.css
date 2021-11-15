@@ -52,7 +52,7 @@ nav.sticky.dark h2, nav.sticky.dark a {
 }
 
 .layanan-link {
-  background-image: url('../../img/verval-ponsel.png');
+  background-image: url('../img/verval-ponsel.png');
   background-size: contain;
 }
 
@@ -2418,8 +2418,8 @@ hr.popular-post{
   left: 100%;
 }
 
-.top-10{
-  top: 2.5rem;
+.top-20{
+  top: 5rem;
 }
 
 .-left-full{
@@ -2436,22 +2436,6 @@ hr.popular-post{
 
 .bottom-5{
   bottom: 1.25rem;
-}
-
-.top-auto{
-  top: auto;
-}
-
-.top-full{
-  top: 100%;
-}
-
-.top-2\/4{
-  top: 50%;
-}
-
-.top-20{
-  top: 5rem;
 }
 
 .z-10{
