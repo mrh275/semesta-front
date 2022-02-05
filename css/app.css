@@ -694,7 +694,7 @@ nav.sticky.dark h2, nav.sticky.dark a {
     }
 
     .partner-list {
-        @apply text-gray-800 hover:translate-x-2 transform transition duration-300 my-2 transition duration-300;
+        @apply text-gray-800 hover:translate-x-2 transform transition duration-300 my-2;
     }
 
     .footer.dark .partner-list {
