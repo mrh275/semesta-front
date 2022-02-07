@@ -80,6 +80,14 @@
   top: 0px
 }
 
+.bottom-0 {
+  bottom: 0px
+}
+
+.right-0 {
+  right: 0px
+}
+
 .left-0 {
   left: 0px
 }
@@ -234,12 +242,26 @@
   padding-bottom: 1rem
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem
+}
+
 .font-medium {
   font-weight: 500
 }
 
 .font-semibold {
   font-weight: 600
+}
+
+.font-bold {
+  font-weight: 700
 }
 
 .text-white {
@@ -250,6 +272,12 @@
 .text-red-500 {
   --tw-text-opacity: 1;
   color: rgba(239, 68, 68, var(--tw-text-opacity))
+}
+
+@media (min-width: 640px) {
+  .sm\:inline {
+    display: inline
+  }
 }
 
 @media (min-width: 1024px) {
