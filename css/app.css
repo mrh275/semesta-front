@@ -245,6 +245,10 @@ nav.sticky.dark h2, nav.sticky.dark a {
         @apply bg-red-600 hover:bg-red-500 focus:ring-red-600 focus:ring-opacity-50 active:bg-red-700 text-white
     }
 
+    .btn-disabled {
+        @apply bg-gray-400 text-gray-700 hover:bg-gray-400;
+    }
+
     .navbar {
         @apply bg-gray-700 bg-opacity-0 absolute w-full sm:max-w-full px-4 py-2 lg:py-8 flex justify-between lg:justify-around z-20;
     }
@@ -418,7 +422,7 @@ nav.sticky.dark h2, nav.sticky.dark a {
     }
 
     .hero-section .hero-title {
-        @apply text-xl lg:text-5xl lg:ml-0 font-medium my-2 text-center text-white;
+        @apply text-xl lg:text-4xl lg:ml-0 font-medium my-2 text-center text-white;
     }
 
     .hero-section .detail-hero {
