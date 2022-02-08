@@ -10,8 +10,8 @@
     <link rel="icon" href="./img/favicon.png" type="image/png" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./dist/css/main.css">
-    <link rel="stylesheet" href="./dist/css/page.css">
+    <link rel="stylesheet" href="./build/main.css">
+    <link rel="stylesheet" href="./build/page.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -62,7 +62,15 @@
         </li>
         <li class="nav-menu-lg"><a href="./gallery.html" class="nav-link">Galeri</a></li>
         <li class="nav-menu-lg"><a href="./contact-us.html" class="nav-link">Kontak Kami</a></li>
+        <li><a href="javascript:void(0)" class="nav-link search-button"><i class="fa fa-search"></i></a></li>
       </ul>
+      <span class="translate-y-8"></span>
+      <div class="search-box invisible opacity-0">
+      <form action="" method="get" class="flex items-center px-4">
+          <input type="text" name="search" class="input-form-search focus:ring-primary" placeholder="Cari apa...">
+          <button type="submit" class="btn btn-primary ml-4"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
       <button class="toggleTheme ml-4">
         <span class="toggle-indicator">
           <i class="bi bi-moon-fill darkMode showDark"></i>
@@ -91,10 +99,10 @@
         </span>
       </button>
     </div>
-    <div class="searchMobile flex justify-center">
-      <input type="text" placeholder="&nbsp; Ketik lalu tekan Enter&nbsp;&nbsp;" name="search" class="search-input w-0">
-      <button class="search-btn"><i class="bi bi-search search-icon"></i></button>
-    </div>
+      <form action="" method="get" class="searchMobile flex justify-center">
+        <input type="text" placeholder="&nbsp; Ketik lalu tekan Enter&nbsp;&nbsp;" name="search" class="search-input w-0">
+        <button class="search-btn" type="button"><i class="bi bi-search search-icon"></i></button>
+      </form>
     <div class="menuListMobile my-5">
       <ul class="text-white menu-nav">
         <li class="navMenu"><a href="/" class="nav-link">Beranda</a></li>
@@ -148,14 +156,25 @@
           <!-- Post Category -->
           <div class="berita-container">
             <div class="berita-terbaru-container">
-              <div class="berita-terbaru-header">
-                <h1 class="berita-terbaru-title">
-                  Article
+              <div class="berita-terbaru-header lg:flex items-center justify-start">
+                <h1 class="berita-terbaru-title whitespace-nowrap">
+                  Search Result :
                 </h1>
+
+                <form action="" method="get" class="w-full pr-4 pl-4 lg:pl-0">
+                <input type="text" class="input-form-search" name="search">
+              </form>
               </div>
     
               <div class="berita-terbaru-content">
                 <div class="berita-wrapper">
+                  <div class="search-not-found">
+                    <h3 class="text-7xl font-bold">404</h3>
+                    <p class="text-xl">
+                        Sorry, we can't find what you're looking for.
+                    </p>  
+                  </div>
+
                   <a href="#" class="berita-terbaru-1 berita-terbaru">
                     <div class="card">
                       <div class="card-title">
