@@ -200,8 +200,20 @@
         @apply mb-5;
     }
 
-    .input-form-comment, .comment-area, .input-form-contact, .contact-area {
+    .input-form-comment, .comment-area, .input-form-contact, .contact-area, .input-form-search {
         @apply w-full rounded-md focus:ring focus:outline-none focus:ring-offset-2 focus:ring-primary transition duration-300 mt-2 p-2;
+    }
+
+    .input-form-search {
+        @apply mt-0 mb-4 lg:my-4 w-full focus:ring-gray-300 p-1;
+    }
+
+    .search-box {
+        @apply absolute top-2/4 right-40 bg-gray-300 dark:bg-gray-800 rounded-md transition duration-300;
+    }
+
+    .search-not-found {
+        @apply text-center my-12 text-gray-700 dark:text-gray-300;
     }
 
     .comment-area, .contact-area {
