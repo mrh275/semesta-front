@@ -200,8 +200,20 @@
         @apply mb-5;
     }
 
-    .input-form-comment, .comment-area, .input-form-contact, .contact-area {
+    .input-form-comment, .comment-area, .input-form-contact, .contact-area, .input-form-search {
         @apply w-full rounded-md focus:ring focus:outline-none focus:ring-offset-2 focus:ring-primary transition duration-300 mt-2 p-2;
+    }
+
+    .input-form-search {
+        @apply mt-0 mb-4 lg:my-4 w-full focus:ring-gray-300 p-1;
+    }
+
+    .search-box {
+        @apply absolute top-2/4 right-40 bg-gray-300 dark:bg-gray-800 rounded-md transition duration-300;
+    }
+
+    .search-not-found {
+        @apply text-center my-12 text-gray-700 dark:text-gray-300;
     }
 
     .comment-area, .contact-area {
@@ -306,6 +318,47 @@
 
     .page-card.dark .form-comment-icon, .page-card.dark .reply-sub, .page-card.dark .comment-label {
         @apply text-white;
+    }
+
+    .alert {
+        @apply border px-4 py-3 rounded relative;
+    }
+
+    .alert-success {
+        @apply bg-green-200 border-green-400 text-green-700;
+    }
+
+    .alert-warning {
+        @apply bg-yellow-200 border-yellow-400 text-yellow-700;
+    }
+
+    .alert-danger {
+        @apply bg-red-200 border-red-400 text-red-700;
+    }
+
+    .alert-secondary {
+        @apply bg-gray-200 border-gray-400 text-gray-700;
+    }
+
+    .alert-close-success {
+        @apply fill-current h-6 w-6 text-green-500;
+    }
+    .alert-close-warning {
+        @apply fill-current h-6 w-6 text-yellow-500;
+    }
+    .alert-close-danger {
+        @apply fill-current h-6 w-6 text-red-500;
+    }
+    .alert-close-secondary {
+        @apply fill-current h-6 w-6 text-gray-500;
+    }
+
+    .album-thumbnail {
+        @apply rounded-lg mx-3 bg-gray-300 dark:bg-gray-700 pb-4 hover:shadow-md transition;
+    }
+
+    .album-title {
+        @apply text-xl ml-5 text-gray-800 font-semibold dark:text-gray-300 transition;
     }
 
     .footer.dark.single-page {

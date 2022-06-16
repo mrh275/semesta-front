@@ -205,7 +205,7 @@ nav.sticky.dark h2, nav.sticky.dark a {
   }
 }
 
-/*! tailwindcss v2.2.17 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v2.2.19 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -907,6 +907,29 @@ video {
   }
 }
 
+.btn-primary{
+  --tw-bg-opacity: 1;
+  background-color: rgba(0, 153, 255, var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.btn-primary:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgba(0, 187, 255, var(--tw-bg-opacity));
+}
+
+.btn-primary:focus{
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgba(0, 153, 255, var(--tw-ring-opacity));
+  --tw-ring-opacity: 0.5;
+}
+
+.btn-primary:active{
+  --tw-bg-opacity: 1;
+  background-color: rgba(0, 119, 255, var(--tw-bg-opacity));
+}
+
 .btn-secondary{
   --tw-bg-opacity: 1;
   background-color: rgba(75, 85, 99, var(--tw-bg-opacity));
@@ -951,6 +974,18 @@ video {
 .btn-danger:active{
   --tw-bg-opacity: 1;
   background-color: rgba(185, 28, 28, var(--tw-bg-opacity));
+}
+
+.btn-disabled{
+  --tw-bg-opacity: 1;
+  background-color: rgba(156, 163, 175, var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(55, 65, 81, var(--tw-text-opacity));
+}
+
+.btn-disabled:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgba(156, 163, 175, var(--tw-bg-opacity));
 }
 
 .navbar{
@@ -1342,7 +1377,7 @@ video {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 0.75rem;
-  padding-right: 0.75rem;
+  padding-right: 2rem;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
@@ -1420,8 +1455,8 @@ video {
   }
 
   .hero-section .hero-title{
-    font-size: 3rem;
-    line-height: 1;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -2292,10 +2327,6 @@ hr.popular-post{
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-  transition-duration: 300ms;
   transition-duration: 300ms;
 }
 
@@ -2418,8 +2449,8 @@ hr.popular-post{
   left: 100%;
 }
 
-.top-10{
-  top: 2.5rem;
+.top-20{
+  top: 5rem;
 }
 
 .-left-full{
@@ -2428,6 +2459,14 @@ hr.popular-post{
 
 .top-0{
   top: 0px;
+}
+
+.bottom-0{
+  bottom: 0px;
+}
+
+.right-0{
+  right: 0px;
 }
 
 .left-0{
@@ -2523,6 +2562,11 @@ hr.popular-post{
   width: max-content;
 }
 
+.translate-y-8{
+  --tw-translate-y: 2rem;
+  transform: var(--tw-transform);
+}
+
 .cursor-pointer{
   cursor: pointer;
 }
@@ -2551,6 +2595,10 @@ hr.popular-post{
   overflow-y: auto;
 }
 
+.whitespace-nowrap{
+  white-space: nowrap;
+}
+
 .bg-gray-400{
   --tw-bg-opacity: 1;
   background-color: rgba(156, 163, 175, var(--tw-bg-opacity));
@@ -2574,6 +2622,11 @@ hr.popular-post{
   padding: 0px;
 }
 
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -2584,8 +2637,35 @@ hr.popular-post{
   padding-bottom: 1rem;
 }
 
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.pr-4{
+  padding-right: 1rem;
+}
+
+.pl-4{
+  padding-left: 1rem;
+}
+
+.text-7xl{
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-medium{
   font-weight: 500;
+}
+
+.font-bold{
+  font-weight: 700;
 }
 
 .font-semibold{
@@ -2600,6 +2680,10 @@ hr.popular-post{
 .text-red-500{
   --tw-text-opacity: 1;
   color: rgba(239, 68, 68, var(--tw-text-opacity));
+}
+
+.opacity-0{
+  opacity: 0;
 }
 
 nav.navbar, .img-brand, .brand {
@@ -2665,13 +2749,32 @@ h2.popular-post-title {
   color: #00ccff;
 }
 
+.focus\:ring-primary:focus{
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgba(0, 153, 255, var(--tw-ring-opacity));
+}
+
+@media (min-width: 640px){
+  .sm\:inline{
+    display: inline;
+  }
+}
+
 @media (min-width: 1024px){
+  .lg\:flex{
+    display: flex;
+  }
+
   .lg\:inline-flex{
     display: inline-flex;
   }
 
   .lg\:hidden{
     display: none;
+  }
+
+  .lg\:pl-0{
+    padding-left: 0px;
   }
 
   .lg\:img-hero-lg {

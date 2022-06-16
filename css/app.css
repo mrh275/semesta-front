@@ -245,6 +245,10 @@ nav.sticky.dark h2, nav.sticky.dark a {
         @apply bg-red-600 hover:bg-red-500 focus:ring-red-600 focus:ring-opacity-50 active:bg-red-700 text-white
     }
 
+    .btn-disabled {
+        @apply bg-gray-400 text-gray-700 hover:bg-gray-400;
+    }
+
     .navbar {
         @apply bg-gray-700 bg-opacity-0 absolute w-full sm:max-w-full px-4 py-2 lg:py-8 flex justify-between lg:justify-around z-20;
     }
@@ -378,7 +382,7 @@ nav.sticky.dark h2, nav.sticky.dark a {
     }
 
     .drop-link-short-lg {
-        @apply pl-3 pr-3 py-2 hover:text-primary transition block w-max;
+        @apply pl-3 pr-8 py-2 hover:text-primary transition block w-max;
     }
 
     .collapse {
@@ -418,7 +422,7 @@ nav.sticky.dark h2, nav.sticky.dark a {
     }
 
     .hero-section .hero-title {
-        @apply text-xl lg:text-5xl lg:ml-0 font-medium my-2 text-center text-white;
+        @apply text-xl lg:text-4xl lg:ml-0 font-medium my-2 text-center text-white;
     }
 
     .hero-section .detail-hero {
@@ -694,7 +698,7 @@ nav.sticky.dark h2, nav.sticky.dark a {
     }
 
     .partner-list {
-        @apply text-gray-800 hover:translate-x-2 transform transition duration-300 my-2 transition duration-300;
+        @apply text-gray-800 hover:translate-x-2 transform transition duration-300 my-2;
     }
 
     .footer.dark .partner-list {

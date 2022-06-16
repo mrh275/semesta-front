@@ -20,7 +20,11 @@ $(document).ready(function() {
     })
 });
 
-    
+$('.search-button').on('click', function(){
+  $('.search-box').toggleClass('invisible');
+  $('.search-box').toggleClass('opacity-0', 300);
+  $('.search-box').toggleClass('translate-y-8');
+});
 
     // Darkmode toggle event
     $('button.toggleTheme').on('click', function () {

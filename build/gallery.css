@@ -68,8 +68,8 @@
   left: 100%
 }
 
-.top-10 {
-  top: 2.5rem
+.top-20 {
+  top: 5rem
 }
 
 .-left-full {
@@ -78,6 +78,14 @@
 
 .top-0 {
   top: 0px
+}
+
+.bottom-0 {
+  bottom: 0px
+}
+
+.right-0 {
+  right: 0px
 }
 
 .left-0 {
@@ -173,6 +181,11 @@
   width: max-content
 }
 
+.translate-y-8 {
+  --tw-translate-y: 2rem;
+  transform: var(--tw-transform)
+}
+
 .cursor-pointer {
   cursor: pointer
 }
@@ -201,6 +214,10 @@
   overflow-y: auto
 }
 
+.whitespace-nowrap {
+  white-space: nowrap
+}
+
 .bg-gray-400 {
   --tw-bg-opacity: 1;
   background-color: rgba(156, 163, 175, var(--tw-bg-opacity))
@@ -224,6 +241,11 @@
   padding: 0px
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem
+}
+
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem
@@ -234,8 +256,35 @@
   padding-bottom: 1rem
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem
+}
+
+.pr-4 {
+  padding-right: 1rem
+}
+
+.pl-4 {
+  padding-left: 1rem
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem
+}
+
 .font-medium {
   font-weight: 500
+}
+
+.font-bold {
+  font-weight: 700
 }
 
 .font-semibold {
@@ -252,12 +301,35 @@
   color: rgba(239, 68, 68, var(--tw-text-opacity))
 }
 
+.opacity-0 {
+  opacity: 0
+}
+
+.focus\:ring-primary:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgba(0, 153, 255, var(--tw-ring-opacity))
+}
+
+@media (min-width: 640px) {
+  .sm\:inline {
+    display: inline
+  }
+}
+
 @media (min-width: 1024px) {
+  .lg\:flex {
+    display: flex
+  }
+
   .lg\:inline-flex {
     display: inline-flex
   }
 
   .lg\:hidden {
     display: none
+  }
+
+  .lg\:pl-0 {
+    padding-left: 0px
   }
 }
